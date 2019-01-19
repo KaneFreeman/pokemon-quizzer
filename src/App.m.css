@@ -1,0 +1,83 @@
+.root {
+}
+
+.mainView {
+	width: 100%;
+	height: calc(100vh - 56px);
+	margin: auto;
+	display: flex;
+}
+
+.content {
+	text-align: center;
+	flex-grow: 1;
+	display: flex;
+}
+
+.nextButton,
+.previousButton {
+	position: absolute;
+	width: 120px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	z-index: 10;
+	height: calc(100vh - 56px);
+	top: 56px;
+}
+
+.nextButton i,
+.previousButton i {
+	font-size: 140px;
+}
+
+.previousButton {
+	position: absolute;
+	left: calc(50% - 520px);
+}
+
+.nextButton {
+	right: calc(50% - 520px);
+}
+
+.startView {
+	height: 400px;
+	width: 600px;
+	margin: auto;
+}
+
+.startQuizButton {
+	height: 200px;
+	width: 100%;
+	margin: auto;
+}
+
+.score {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 60px;
+	margin-bottom: 100px;
+}
+
+.score i {
+	font-size: 80px;
+	line-height: 80px;
+}
+
+.correct,
+.incorrect {
+	display: flex;
+	line-height: 80px;
+}
+
+.correct i {
+	color: #78C850;
+}
+
+.incorrect i {
+	color: #e6261b;
+}

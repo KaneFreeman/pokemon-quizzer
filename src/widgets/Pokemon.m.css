@@ -1,0 +1,361 @@
+.root {
+	flex-grow: 1;
+	position: relative;
+}
+
+.sectionHeader {
+	position: relative;
+	padding: 20px;
+	margin: 0 -20px;
+	text-align: center;
+	background-color: #24292e;
+	color: hsla(0,0%,100%,.95);
+	z-index: 10;
+	width: 100%;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+.content {
+	position: relative;
+	z-index: 10;
+	padding: 0 20px 20px;
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	margin: auto;
+	background-color: white;
+	color: #24292e;
+	height: calc(100vh - 56px);
+	box-sizing: border-box;
+}
+
+.summary {
+	padding-top: 20px;
+	display: flex;
+}
+
+.summaryDetails {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.details {
+
+}
+
+.image {
+	width: 300px;
+	height: 300px;
+  transition: all 0.5s;
+}
+
+.image.hidden {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.type1,
+.type2 {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type1 {
+	left: 0;
+	right: 50%;
+}
+
+.type2 {
+	left: 50%;
+	right: 0;
+}
+
+.typeNames {
+	display: flex;
+}
+
+.typeName {
+	text-transform: uppercase;
+	padding: 4px 8px;
+	box-sizing: border-box;
+	color: #fff;
+	margin-left: 0.5em;
+}
+
+.typeName:first-child {
+	margin-left: 0;
+}
+
+.evolutionText {
+	
+}
+
+.flavorText {
+
+}
+
+/* Answers */
+.answer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.answerIndicator {
+	position: absolute;
+	font-size: 60px;
+	line-height: 60px;
+	top: 8px;
+	color: white;
+}
+
+.nextButton {
+	float: right;
+	line-height: 11px;
+}
+
+/* Types */
+.typeNormal {
+	background-color: #A8A878;
+}
+
+.typeNormal.typeName {
+	border: 2px solid #A8A878;
+}
+
+.sectionHeader.typeNormal,
+.typeNormal.typeName {
+	background-color: rgb(112, 112, 72);
+}
+
+.typeFighting {
+	background-color: #C03028;
+}
+
+.typeFighting.typeName {
+	border: 2px solid #C03028;
+}
+
+.sectionHeader.typeFighting,
+.typeFighting.typeName {
+	background-color: rgb(123, 30, 25);
+}
+
+.typeFlying {
+	background-color: #A890F0;
+}
+
+.typeFlying.typeName {
+	border: 2px solid #A890F0;
+}
+
+.sectionHeader.typeFlying,
+.typeFlying.typeName {
+	background-color: rgb(77, 30, 220);
+}
+
+.typePoison {
+	background-color: #A040A0;
+}
+
+.typePoison.typeName {
+	border: 2px solid #A040A0;
+}
+
+.sectionHeader.typePoison,
+.typePoison.typeName {
+	background-color: rgb(106, 42, 106);
+}
+
+.typeGround {
+	background-color: #E0C068;
+}
+
+.typeGround.typeName {
+	border: 2px solid #E0C068;
+}
+
+.sectionHeader.typeGround,
+.typeGround.typeName {
+	background-color: rgb(178, 140, 36);
+}
+
+.typeRock {
+	background-color: #B8A038;
+}
+
+.typeRock.typeName {
+	border: 2px solid #B8A038;
+}
+
+.sectionHeader.typeRock,
+.typeRock.typeName {
+	background-color: rgb(121, 106, 37);
+}
+
+.typeBug {
+	background-color: #A8B820;
+}
+
+.typeBug.typeName {
+	border: 2px solid #A8B820;
+}
+
+.sectionHeader.typeBug,
+.typeBug.typeName {
+	background-color: rgb(107, 117, 21);
+}
+
+.typeGhost {
+	background-color: #705898;
+}
+
+.typeGhost.typeName {
+	border: 2px solid #705898;
+}
+
+.sectionHeader.typeGhost,
+.typeGhost.typeName {
+	background-color: rgb(74, 58, 100);
+}
+
+.typeSteel {
+	background-color: #B8B8D0;
+}
+
+.typeSteel.typeName {
+	border: 2px solid #B8B8D0;
+}
+
+.sectionHeader.typeSteel,
+.typeSteel.typeName {
+	background-color: rgb(102, 102, 153);
+}
+
+.typeFire {
+	background-color: #F08030;
+}
+
+.typeFire.typeName {
+	border: 2px solid #F08030;
+}
+
+.sectionHeader.typeFire,
+.typeFire.typeName {
+	background-color: rgb(171, 79, 13);
+}
+
+.typeWater {
+	background-color: #6890F0;
+}
+
+.typeWater.typeName {
+	border: 2px solid #6890F0;
+}
+
+.sectionHeader.typeWater,
+.typeWater.typeName {
+	background-color: rgb(20, 75, 204);
+}
+
+.typeGrass {
+	background-color: #78C850;
+}
+
+.typeGrass.typeName {
+	border: 2px solid #78C850;
+}
+
+.sectionHeader.typeGrass,
+.typeGrass.typeName {
+	background-color: rgb(76, 140, 44);
+}
+
+.typeElectric {
+	background-color: #F8D030;
+}
+
+.typeElectric.typeName {
+	border: 2px solid #F8D030;
+}
+
+.sectionHeader.typeElectric,
+.typeElectric.typeName {
+	background-color: rgb(187, 151, 7);
+}
+
+.typePsychic {
+	background-color: #F85888;
+}
+
+.typePsychic.typeName {
+	border: 2px solid #F85888;
+}
+
+.sectionHeader.typePsychic,
+.typePsychic.typeName {
+	background-color: rgb(211, 9, 69);
+}
+
+.typeIce {
+	background-color: #98D8D8;
+}
+
+.typeIce.typeName {
+	border: 2px solid #98D8D8;
+}
+
+.sectionHeader.typeIce,
+.typeIce.typeName {
+	background-color: rgb(66, 174, 174);
+}
+
+.typeDragon {
+	background-color: #7038F8;
+}
+
+.typeDragon.typeName {
+	border: 2px solid #7038F8;
+}
+
+.sectionHeader.typeDragon,
+.typeDragon.typeName {
+	background-color: rgb(62, 7, 192);
+}
+
+.typeDark {
+	background-color: #705848;
+}
+
+.typeDark.typeName {
+	border: 2px solid #705848;
+}
+
+.sectionHeader.typeDark,
+.typeDark.typeName {
+	background-color: rgb(72, 56, 46);
+}
+
+.typeFairy {
+	background-color: #EE99AC;
+}
+
+.typeFairy.typeName {
+	border: 2px solid #EE99AC;
+}
+
+.sectionHeader.typeFairy,
+.typeFairy.typeName {
+	background-color: rgb(218, 37, 76);
+}
