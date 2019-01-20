@@ -111,3 +111,10 @@
 	height: calc(42px * 3 + 40px);
 	justify-content: space-evenly;
 }
+
+.amount {
+	display: flex;
+	flex-direction: column;
+	height: calc(42px * 4 + 60px);
+	justify-content: space-evenly;
+}

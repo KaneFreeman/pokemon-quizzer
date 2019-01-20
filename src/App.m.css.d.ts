@@ -12,3 +12,4 @@ export const correct: string;
 export const incorrect: string;
 export const percent: string;
 export const difficulty: string;
+export const amount: string;

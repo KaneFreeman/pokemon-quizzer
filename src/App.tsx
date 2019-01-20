@@ -26,6 +26,7 @@ interface AppState {
 	options?: PokemonData[];
 	complete: boolean;
 	difficulty?: 'easy' | 'medium' | 'hard' | 'very hard';
+	amount?: 10 | 25 | 50 | 'all';
 }
 
 interface Quiz {
@@ -87,12 +88,12 @@ export class App extends WidgetBase {
 	};
 
 	private _loadPokemon(index: number) {
-		const { generation, evolutionData, difficulty } = this._state;
+		const { generation, evolutionData, difficulty, amount } = this._state;
 		if (!this._state.quiz || !this._state.generationData || this._state.complete) {
 			return;
 		}
 
-		if (index > this._state.quiz.questions.length - 1) {
+		if (index > (!amount || amount === 'all' ? this._state.quiz.questions.length - 1 : amount - 1)) {
 			this._state.complete = true;
 			this.invalidate();
 			return;
@@ -140,8 +141,6 @@ export class App extends WidgetBase {
 					break;
 			}
 
-			console.log(difficulty, optionCnt);
-
 			const optionsSoFar = options.map((option) => option.id);
 			while (options.length < optionCnt) {
 				const id = randomIntInclusive(generation.pokemon.startId, generation.pokemon.endId);
@@ -180,6 +179,7 @@ export class App extends WidgetBase {
 		this._state.generationData = globalData.generations[generation.name];
 		this._state.quiz = undefined;
 		this._state.difficulty = undefined;
+		this._state.amount = undefined;
 		this.invalidate();
 	}
 
@@ -213,6 +213,7 @@ export class App extends WidgetBase {
 		};
 		this._state.complete = false;
 		this._state.difficulty = undefined;
+		this._state.amount = undefined;
 		this.invalidate();
 	}
 
@@ -226,13 +227,22 @@ export class App extends WidgetBase {
 		this.invalidate();
 	}
 
+	private _onAmountSelection(amount: 10 | 25 | 50 | 'all') {
+		if (!this._state.quiz) {
+			return;
+		}
+
+		this._state.amount = amount;
+		this._loadPokemon(0);
+	}
+
 	private _onDifficultySelection(difficulty: 'easy' | 'medium' | 'hard' | 'very hard') {
 		if (!this._state.quiz) {
 			return;
 		}
 
 		this._state.difficulty = difficulty;
-		this._loadPokemon(0);
+		this.invalidate();
 	}
 
 	private _renderQuiz(quiz: Quiz): DNode {
@@ -260,14 +270,24 @@ export class App extends WidgetBase {
 	}
 
 	private _renderStart(correct: number, total: number): DNode {
-		const { complete, difficulty, quiz } = this._state;
+		const { complete, difficulty, quiz, amount } = this._state;
 
-		const percent = Math.round(correct / total * 100);
+		const percent = Math.round(correct / (!amount || amount === 'all' ? total : amount) * 100);
 
 		return (
 			<div classes={css.startView}>
 				<div>
 					{complete && <h1 classes={css.percent}>{`${percent}%`}</h1>}
+				</div>
+				<div>
+					{quiz && difficulty && !amount && (
+						<div classes={css.amount}>
+							<Button onClick={() => this._onAmountSelection(10)}>{`10`}</Button>
+							<Button onClick={() => this._onAmountSelection(25)}>{`25`}</Button>
+							<Button onClick={() => this._onAmountSelection(50)}>{`50`}</Button>
+							<Button onClick={() => this._onAmountSelection('all')}>All</Button>
+						</div>
+					)}
 				</div>
 				<div>
 					{quiz && !difficulty && (
@@ -288,7 +308,7 @@ export class App extends WidgetBase {
 	}
 
 	protected render() {
-		const { quiz, generation, complete, difficulty } = this._state;
+		const { quiz, generation, complete, difficulty, amount } = this._state;
 
 		let correct = 0;
 		let incorrect = 0;
@@ -301,15 +321,17 @@ export class App extends WidgetBase {
 			total = generation.pokemon.endId - generation.pokemon.startId + 1;
 		}
 
+		const quizTotal = !amount || amount === 'all' ? total : amount;
+
 		return (
 			<div classes={css.root}>
 				<Menu onGenerationChange={this._onGeneartionChange} />
 				<div classes={css.mainView}>
-					{quiz && difficulty && (
+					{quiz && difficulty && amount && (
 						<div key="score" classes={css.scoreWrapper}>
 							<div classes={css.score}>
 								<div key="total" classes={css.total}>
-									{`${total}`}
+									{`${quizTotal}`}
 									<i class="material-icons">bug_report</i>
 								</div>
 								<div key="correct" classes={css.correct}>
@@ -323,7 +345,7 @@ export class App extends WidgetBase {
 							</div>
 						</div>
 					)}
-					{quiz && difficulty && !complete ? this._renderQuiz(quiz) : this._renderStart(correct, total)}
+					{quiz && difficulty && amount && !complete ? this._renderQuiz(quiz) : this._renderStart(correct, total)}
 				</div>
 			</div>
 		);
