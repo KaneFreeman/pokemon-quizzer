@@ -26,37 +26,19 @@
 	margin-right: 0.5em;
 }
 
-/* Score */
-.score {
-	position: absolute;
-	width: 400px;
-	left: calc(50% - 200px);
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-.total,
-.correct,
-.incorrect {
-	flex-grow: 1;
-}
-
-.total {
-
-}
-
-.score i {
-	position: absolute;
-	font-size: 40px;
-	line-height: 56px;
-	top: -20px;
-}
-
-.correct i {
-	color: #78C850;
-}
-
-.incorrect i {
-	color: #e6261b;
+.select {
+	background-color: #ffffff;
+	border: 1px solid #d6dde2;
+	border-bottom-color: #5c6c7c;
+	cursor: pointer;
+	font-size: inherit;
+	line-height: 24px;
+	min-height: calc(8px * 5 + 2);
+	outline: none;
+	padding: 8px calc(8px * 3) 8px 8px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	appearance: none;
+	border-radius: 0;
 }

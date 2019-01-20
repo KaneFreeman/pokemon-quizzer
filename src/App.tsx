@@ -25,6 +25,7 @@ interface AppState {
 	quiz?: Quiz;
 	options?: PokemonData[];
 	complete: boolean;
+	difficulty?: 'easy' | 'medium' | 'hard' | 'very hard';
 }
 
 interface Quiz {
@@ -86,7 +87,7 @@ export class App extends WidgetBase {
 	};
 
 	private _loadPokemon(index: number) {
-		const { generation, evolutionData } = this._state;
+		const { generation, evolutionData, difficulty } = this._state;
 		if (!this._state.quiz || !this._state.generationData || this._state.complete) {
 			return;
 		}
@@ -129,8 +130,20 @@ export class App extends WidgetBase {
 				}
 			}
 
+			let optionCnt = 4;
+			switch(difficulty) {
+				case 'medium':
+					optionCnt = 8;
+					break;
+				case 'hard':
+					optionCnt = 12;
+					break;
+			}
+
+			console.log(difficulty, optionCnt);
+
 			const optionsSoFar = options.map((option) => option.id);
-			while (options.length < 12) {
+			while (options.length < optionCnt) {
 				const id = randomIntInclusive(generation.pokemon.startId, generation.pokemon.endId);
 				if (optionsSoFar.indexOf(id) < 0) {
 					options.push({
@@ -166,6 +179,7 @@ export class App extends WidgetBase {
 		this._state.generation = generation;
 		this._state.generationData = globalData.generations[generation.name];
 		this._state.quiz = undefined;
+		this._state.difficulty = undefined;
 		this.invalidate();
 	}
 
@@ -198,7 +212,8 @@ export class App extends WidgetBase {
 			questions
 		};
 		this._state.complete = false;
-		this._loadPokemon(0);
+		this._state.difficulty = undefined;
+		this.invalidate();
 	}
 
 	private _onAnswer(correct: boolean) {
@@ -209,6 +224,15 @@ export class App extends WidgetBase {
 		this._state.quiz.questions[this._state.quiz.currentIndex].answered = true;
 		this._state.quiz.questions[this._state.quiz.currentIndex].correct = correct;
 		this.invalidate();
+	}
+
+	private _onDifficultySelection(difficulty: 'easy' | 'medium' | 'hard' | 'very hard') {
+		if (!this._state.quiz) {
+			return;
+		}
+
+		this._state.difficulty = difficulty;
+		this._loadPokemon(0);
 	}
 
 	private _renderQuiz(quiz: Quiz): DNode {
@@ -235,52 +259,71 @@ export class App extends WidgetBase {
 		);
 	}
 
-	private _renderStart(correct: number, incorrect: number): DNode {
-		const { complete } = this._state;
+	private _renderStart(correct: number, total: number): DNode {
+		const { complete, difficulty, quiz } = this._state;
+
+		const percent = Math.round(correct / total * 100);
 
 		return (
 			<div classes={css.startView}>
-				{complete && (
-					<div classes={css.score}>
-						<div key="correct" classes={css.correct}>
-							{`${correct}`}
-							<i class="material-icons">done</i>
+				<div>
+					{complete && <h1 classes={css.percent}>{`${percent}%`}</h1>}
+				</div>
+				<div>
+					{quiz && !difficulty && (
+						<div classes={css.difficulty}>
+							<Button onClick={() => this._onDifficultySelection('easy')}>Easy</Button>
+							<Button onClick={() => this._onDifficultySelection('medium')}>Medium</Button>
+							<Button onClick={() => this._onDifficultySelection('hard')}>Hard</Button>
 						</div>
-						<div key="incorrect" classes={css.incorrect}>
-							{`${incorrect}`}
-							<i class="material-icons">close</i>
-						</div>
-					</div>
-				)}
-				<Button extraClasses={{ root: css.startQuizButton }} onClick={this._startQuiz}>
-					Start Quiz
-				</Button>
+					)}
+				</div>
+				<div>
+					{(!quiz || complete) && <Button extraClasses={{ root: css.startQuizButton }} onClick={this._startQuiz}>
+						Start {complete ? 'Another ' : ''}Quiz
+					</Button>}
+				</div>
 			</div>
 		);
 	}
 
 	protected render() {
-		const { quiz, generation, complete } = this._state;
+		const { quiz, generation, complete, difficulty } = this._state;
 
 		let correct = 0;
 		let incorrect = 0;
+		let total = 0;
 		if (quiz) {
 			const answeredQuestions = quiz.questions.filter((question) => question.answered);
 			const correctQuestions = answeredQuestions.filter((question) => question.correct);
 			correct = correctQuestions.length;
 			incorrect = answeredQuestions.length - correct;
+			total = generation.pokemon.endId - generation.pokemon.startId + 1;
 		}
 
 		return (
 			<div classes={css.root}>
-				<Menu
-					onGenerationChange={this._onGeneartionChange}
-					total={generation.pokemon.endId - generation.pokemon.startId + 1}
-					correct={correct}
-					incorrect={incorrect}
-				/>
+				<Menu onGenerationChange={this._onGeneartionChange} />
 				<div classes={css.mainView}>
-					{quiz && !complete ? this._renderQuiz(quiz) : this._renderStart(correct, incorrect)}
+					{quiz && difficulty && (
+						<div key="score" classes={css.scoreWrapper}>
+							<div classes={css.score}>
+								<div key="total" classes={css.total}>
+									{`${total}`}
+									<i class="material-icons">bug_report</i>
+								</div>
+								<div key="correct" classes={css.correct}>
+									{`${correct}`}
+									<i class="material-icons">done</i>
+								</div>
+								<div key="incorrect" classes={css.incorrect}>
+									{`${incorrect}`}
+									<i class="material-icons">close</i>
+								</div>
+							</div>
+						</div>
+					)}
+					{quiz && difficulty && !complete ? this._renderQuiz(quiz) : this._renderStart(correct, total)}
 				</div>
 			</div>
 		);

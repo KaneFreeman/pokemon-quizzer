@@ -6,6 +6,7 @@
 	height: calc(100vh - 56px);
 	margin: auto;
 	display: flex;
+	flex-direction: column;
 }
 
 .content {
@@ -56,22 +57,37 @@
 	margin: auto;
 }
 
+@media(max-width: 600px) {
+	.startView {
+		width: 90%;
+		height: 300px;
+	}
+
+	.startQuizButton {
+		height: 100px;
+	}
+}
+
+.scoreWrapper {
+	display: block;
+}
+
 .score {
 	display: flex;
 	justify-content: space-evenly;
-	font-size: 60px;
-	margin-bottom: 100px;
+	font-size: 30px;
 }
 
 .score i {
-	font-size: 80px;
-	line-height: 80px;
+	font-size: 40px;
+	line-height: 40px;
 }
 
+.total,
 .correct,
 .incorrect {
 	display: flex;
-	line-height: 80px;
+	line-height: 40px;
 }
 
 .correct i {
@@ -80,4 +96,18 @@
 
 .incorrect i {
 	color: #e6261b;
+}
+
+.percent {
+  text-align: center;
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 60px;
+}
+
+.difficulty {
+	display: flex;
+	flex-direction: column;
+	height: calc(42px * 3 + 40px);
+	justify-content: space-evenly;
 }

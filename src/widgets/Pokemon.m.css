@@ -28,7 +28,7 @@ h4 {
 	margin: auto;
 	background-color: white;
 	color: #24292e;
-	height: calc(100vh - 56px);
+	height: calc(100vh - 96px);
 	box-sizing: border-box;
 }
 
@@ -358,4 +358,39 @@ h4 {
 .sectionHeader.typeFairy,
 .typeFairy.typeName {
 	background-color: rgb(218, 37, 76);
+}
+
+@media(max-width: 800px) {
+	.content {
+		width: 85%;
+	}
+
+	.image {
+		width: 50%;
+		height: 50%;
+	}
+	
+	.image.hidden {
+		width: 50%;
+		height: 50%;
+	}
+
+	.sectionHeader {
+		font-size: 1.5em;
+	}
+
+	.answerIndicator {
+		font-size: 40px;
+    line-height: 50px;
+	}
+}
+
+@media(max-width: 800px) {
+	.answer {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.answerButton {
+		min-width: calc(50% - 5px);
+	}
 }

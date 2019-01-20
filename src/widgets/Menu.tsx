@@ -7,9 +7,6 @@ import { generations, generationLookup, Generation } from '../constants';
 import * as css from './Menu.m.css';
 
 export interface MenuProperties {
-	correct: number;
-	incorrect: number;
-	total: number;
 	onGenerationChange: (generation: Generation) => void;
 }
 
@@ -19,26 +16,10 @@ export class Menu extends WidgetBase<MenuProperties> {
 	}
 
 	protected render() {
-		const { correct, incorrect, total } = this.properties;
-
 		return (
 			<div classes={css.root}>
 				<Toolbar heading="Pokemon Quizzer!" collapseWidth={600}>
-					<div key="score" classes={css.score}>
-						<div key="total" classes={css.total}>
-							{`${total}`}
-							<i class="material-icons">bug_report</i>
-						</div>
-						<div key="correct" classes={css.correct}>
-							{`${correct}`}
-							<i class="material-icons">done</i>
-						</div>
-						<div key="incorrect" classes={css.incorrect}>
-							{`${incorrect}`}
-							<i class="material-icons">close</i>
-						</div>
-					</div>
-					<select key="generation-selection" onchange={this._generationChange}>
+					<select key="generation-selection" onchange={this._generationChange} classes={css.select}>
 						{generations.map((generation) => (
 							<option key={generation.name} value={generation.name}>
 								{generation.name} - {generation.region}

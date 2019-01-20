@@ -33,3 +33,4 @@ export const typeIce: string;
 export const typeDragon: string;
 export const typeDark: string;
 export const typeFairy: string;
+export const answerButton: string;
