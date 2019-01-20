@@ -8,7 +8,7 @@ WORKDIR /usr/src
 COPY . .
 
 # Copy package manager files to the working directory and run install
-RUN npm install
+RUN yarn install
 
 # Build the app and move the resulting build to the `/public` directory
 RUN npm run now-build

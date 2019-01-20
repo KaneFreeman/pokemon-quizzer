@@ -6,6 +6,7 @@
     "build": "dojo build --mode dist",
     "build:dev": "dojo build --mode dev",
     "data": "node data",
+    "deploy": "now",
     "now-build": "npm run build && mv ./output/dist /public",
     "prettier": "prettier --write \"{src,tests,scripts}/**/*.{ts,tsx}\"",
     "test": "dojo test",
@@ -14,7 +15,6 @@
     "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
   },
   "dependencies": {
-    "@dojo/cli-create-theme": "^4.0.0",
     "@dojo/framework": "^4.0.0",
     "@dojo/themes": "^4.0.0",
     "@dojo/widgets": "^4.0.0",
@@ -22,6 +22,7 @@
     "tslib": "~1.8.1"
   },
   "devDependencies": {
+    "@dojo/cli": "^4.0.0",
     "@dojo/cli-build-app": "^4.0.0",
     "@dojo/cli-test-intern": "^4.0.0",
     "@types/fs-extra": "^5.0.4",
@@ -32,6 +33,7 @@
     "node-fetch": "^2.3.0",
     "ora": "^3.0.0",
     "prettier": "^1.15.3",
+    "shx": "^0.3.2",
     "ts-node": "^7.0.1",
     "typescript": "~2.6.1"
   },
