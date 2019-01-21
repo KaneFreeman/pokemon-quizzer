@@ -41,6 +41,11 @@ interface PokemonQuestion {
 	correct: boolean;
 }
 
+interface AnswerOption {
+	id: number;
+	order: number;
+}
+
 export interface GenerationData {
 	dataById: { [id: number]: PokemonData };
 	idByName: { [name: string]: number };
@@ -88,7 +93,7 @@ export class App extends WidgetBase {
 	};
 
 	private _loadPokemon(index: number) {
-		const { generation, evolutionData, difficulty, amount } = this._state;
+		const { difficulty, amount } = this._state;
 		if (!this._state.quiz || !this._state.generationData || this._state.complete) {
 			return;
 		}
@@ -105,30 +110,27 @@ export class App extends WidgetBase {
 			const data = this._state.generationData.dataById[id];
 			this._state.quiz.currentIndex = index;
 
-			const options: { id: number; order: number }[] = [
+			const options: AnswerOption[] = [
 				{
 					id: data.id,
 					order: Math.random()
 				}
 			];
 
-			let evolutionChain: PokemonEvolutionChain | undefined;
-			const evolutionIdMatch = /\/([0-9]+)\/$/g.exec(data.speciesData.evolution_chain.url);
-			if (evolutionIdMatch) {
-				const evolutionId = +evolutionIdMatch[1];
-				evolutionChain = evolutionData[evolutionId];
+			const evolutionConfusionChance = Math.random();
+			let evolutionOption: AnswerOption | undefined;
+			if (evolutionConfusionChance <= 0.6 && evolutionConfusionChance > 0.2) {
+				evolutionOption = this._getRandomOptionFromEvolutionChain(options, data);
+			}
+			
+			if (evolutionConfusionChance <= 0.2 || (!evolutionOption && evolutionConfusionChance <= 0.4)) {
+				const randomOption = this._getRandomGenerationOption(options);
+				options.push(randomOption);
+				evolutionOption = this._getRandomOptionFromEvolutionChain(options, dataByIdAll[randomOption.id]);
 			}
 
-			if (Math.random() < 0.5) {
-				const evolutionChainIds = this._getAllEvolutionIds(evolutionChain && evolutionChain.chain).filter(
-					(num) => num !== data.id
-				);
-				if (evolutionChainIds.length > 0) {
-					options.push({
-						id: evolutionChainIds[randomIntInclusive(0, evolutionChainIds.length - 1)],
-						order: Math.random()
-					});
-				}
+			if (evolutionOption) {
+				options.push(evolutionOption);
 			}
 
 			let optionCnt = 4;
@@ -141,22 +143,50 @@ export class App extends WidgetBase {
 					break;
 			}
 
-			const optionsSoFar = options.map((option) => option.id);
 			while (options.length < optionCnt) {
-				const id = randomIntInclusive(generation.pokemon.startId, generation.pokemon.endId);
-				if (optionsSoFar.indexOf(id) < 0) {
-					options.push({
-						id: id,
-						order: Math.random()
-					});
-					optionsSoFar.push(id);
-				}
+				const randomOption = this._getRandomGenerationOption(options);
+				options.push(randomOption);
 			}
 			options.sort((a, b) => a.order - b.order);
 			this._state.options = options.map((option) => dataByIdAll[option.id]);
 
 			this.invalidate();
 			return;
+		}
+	}
+
+	private _getRandomGenerationOption(currentOptions: AnswerOption[]): AnswerOption {
+		const { generation } = this._state;
+		const optionsSoFar = currentOptions.map((option) => option.id);
+		let id;
+		do {
+			id = randomIntInclusive(generation.pokemon.startId, generation.pokemon.endId);
+		} while (optionsSoFar.indexOf(id) >= 0);
+
+		return {
+			id: id,
+			order: Math.random()
+		}
+	}
+
+	private _getRandomOptionFromEvolutionChain(currentOptions: AnswerOption[], data: PokemonData): AnswerOption | undefined {
+		const { evolutionData } = this._state;
+		let evolutionChain: PokemonEvolutionChain | undefined;
+		const evolutionIdMatch = /\/([0-9]+)\/$/g.exec(data.speciesData.evolution_chain.url);
+		if (evolutionIdMatch) {
+			const evolutionId = +evolutionIdMatch[1];
+			evolutionChain = evolutionData[evolutionId];
+		}
+
+		const evolutionChainIds = this._getAllEvolutionIds(evolutionChain && evolutionChain.chain).filter(
+			(num) => num !== data.id
+		);
+
+		if (evolutionChainIds.length > 0) {
+			return {
+				id: evolutionChainIds[randomIntInclusive(0, evolutionChainIds.length - 1)],
+				order: Math.random()
+			};
 		}
 	}
 
