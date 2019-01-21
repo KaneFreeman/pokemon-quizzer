@@ -57,19 +57,10 @@
 	margin: auto;
 }
 
-@media(max-width: 600px) {
-	.startView {
-		width: 90%;
-		height: 300px;
-	}
-
-	.startQuizButton {
-		height: 100px;
-	}
-}
-
 .scoreWrapper {
 	display: block;
+	width: 800px;
+	margin: 0 auto;
 }
 
 .score {
@@ -117,4 +108,19 @@
 	flex-direction: column;
 	height: calc(42px * 4 + 60px);
 	justify-content: space-evenly;
+}
+
+@media(max-width: 600px) {
+	.startView {
+		width: 90%;
+		height: 300px;
+	}
+
+	.startQuizButton {
+		height: 100px;
+	}
+
+	.scoreWrapper {
+		width: 100%;
+	}
 }
