@@ -1,11 +1,17 @@
 export interface Generation {
 	name: string;
-	region: string;
-	games: string[];
+	region?: string;
+	games?: string[];
 	pokemon: {
 		startId: number;
 		endId: number;
 	};
+	skipMatrix?: SkipMatrix[];
+}
+
+export interface SkipMatrix {
+	index: number;
+	numberToSkip: number;
 }
 
 export const generations: Generation[] = [

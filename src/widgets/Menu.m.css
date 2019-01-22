@@ -26,19 +26,63 @@
 	margin-right: 0.5em;
 }
 
-.select {
+.selected {
+	border: 1px solid #d6dde2;
+}
+
+.selected.generationButton,
+.selected .addButton {
+	color: #006be6;
+}
+
+.selected.generationButton {
+	border-color: #006be6;
+}
+
+.generationButton,
+.addButton {
 	background-color: #ffffff;
 	border: 1px solid #d6dde2;
-	border-bottom-color: #5c6c7c;
+	color: slategray;
 	cursor: pointer;
-	font-size: inherit;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
 	line-height: 24px;
-	min-height: calc(8px * 5 + 2);
+	min-width: calc(8px * 20);
+	padding: 8px;
+	margin: 0;
+}
+
+.generationButton:focus,
+.addButton:focus {
 	outline: none;
-	padding: 8px calc(8px * 3) 8px 8px;
-	position: relative;
-	text-align: left;
+}
+
+.generationButton {
+	display: flex;
+	margin-bottom: 8px;
 	width: 100%;
-	appearance: none;
-	border-radius: 0;
+}
+
+.addButton {
+	border: none;
+	padding: 0;
+	margin: 0;
+	min-width: 24px;
+	height: 24px;
+	margin-right: 8px;
+}
+
+.onlyGeneration {
+	padding-left: 40px;
+}
+
+@media(min-width: 1070px) {
+	.generations {
+		position: absolute;
+		top: 72px;
+		right: 16px;
+    width: 225px;
+	}
 }

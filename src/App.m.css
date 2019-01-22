@@ -99,15 +99,15 @@
 .difficulty {
 	display: flex;
 	flex-direction: column;
-	height: calc(42px * 3 + 40px);
-	justify-content: space-evenly;
+	height: calc(42px * 3 + 16px);
+	justify-content: space-between;
 }
 
 .amount {
 	display: flex;
 	flex-direction: column;
-	height: calc(42px * 4 + 60px);
-	justify-content: space-evenly;
+	height: calc(42px * 4 + 24px);
+	justify-content: space-between;
 }
 
 @media(max-width: 600px) {
@@ -122,5 +122,12 @@
 
 	.scoreWrapper {
 		width: 100%;
+	}
+}
+
+@media(max-width: 1600px) and (min-width: 1071px) {
+	.mainView {
+		width: calc(100vw - 225px - 32px);
+    margin: 0;
 	}
 }

@@ -179,7 +179,12 @@ export class Pokemon extends WidgetBase<PokemonProperties> {
 						<div key="answer" classes={css.answer}>
 							{options &&
 								options.map((option) => (
-									<Button onClick={() => this._onSubmit(option.id)} extraClasses={{root: css.answerButton}}>{option.speciesData.name}</Button>
+									<Button
+										onClick={() => this._onSubmit(option.id)}
+										extraClasses={{ root: css.answerButton }}
+									>
+										{option.speciesData.name}
+									</Button>
 								))}
 						</div>
 					</div>

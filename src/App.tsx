@@ -3,7 +3,7 @@ import { DNode } from '@dojo/framework/widget-core/interfaces';
 import { tsx } from '@dojo/framework/widget-core/tsx';
 import Button from '@dojo/widgets/button';
 
-import { generations, Generation } from './constants';
+import { generations, Generation, SkipMatrix } from './constants';
 import { Menu } from './widgets/Menu';
 import { Pokemon, PokemonData, PokemonEvolutionChain, PokemonEvolutionChainLink } from './widgets/Pokemon';
 
@@ -59,6 +59,43 @@ function randomIntInclusive(min: number, max: number): number {
 	return Math.round(Math.random() * (max - min)) + min;
 }
 
+function mergeGenerationData(...generationsData: GenerationData[]): GenerationData {
+	return generationsData.reduce((previous, currentData) => {
+		return {
+			dataById: { ...previous.dataById, ...currentData.dataById },
+			idByName: { ...previous.idByName, ...currentData.idByName }
+		};
+	});
+}
+
+function createCustomGeneration(...generations: Generation[]): Generation {
+	const skipMatrix: SkipMatrix[] = [];
+
+	generations.sort((a, b) => a.pokemon.startId - b.pokemon.startId);
+
+	let endId = 0;
+	generations.forEach((generation) => {
+		console.log(endId, endId + 1 - generation.pokemon.startId);
+		skipMatrix.push({
+			index: endId + 1,
+			numberToSkip: generation.pokemon.startId - (endId + 1)
+		});
+		endId += generation.pokemon.endId - generation.pokemon.startId + 1;
+		console.log(endId, skipMatrix);
+	});
+
+	const generation: Generation = {
+		name: 'Custom',
+		pokemon: {
+			startId: 1,
+			endId: endId
+		},
+		skipMatrix
+	};
+
+	return generation;
+}
+
 export const globalData = {
 	generations: {
 		'Generation I': GenerationI as any,
@@ -104,7 +141,7 @@ export class App extends WidgetBase {
 			return;
 		}
 
-		const id = this._state.quiz.questions[index].id;
+		const id = this._computeTrueId(this._state.quiz.questions[index].id);
 
 		if (this._state.generationData.dataById[id]) {
 			const data = this._state.generationData.dataById[id];
@@ -122,7 +159,7 @@ export class App extends WidgetBase {
 			if (evolutionConfusionChance <= 0.6 && evolutionConfusionChance > 0.2) {
 				evolutionOption = this._getRandomOptionFromEvolutionChain(options, data);
 			}
-			
+
 			if (evolutionConfusionChance <= 0.2 || (!evolutionOption && evolutionConfusionChance <= 0.4)) {
 				const randomOption = this._getRandomGenerationOption(options);
 				options.push(randomOption);
@@ -134,7 +171,7 @@ export class App extends WidgetBase {
 			}
 
 			let optionCnt = 4;
-			switch(difficulty) {
+			switch (difficulty) {
 				case 'medium':
 					optionCnt = 8;
 					break;
@@ -155,21 +192,41 @@ export class App extends WidgetBase {
 		}
 	}
 
+	private _computeTrueId(id: number): number {
+		const { generation } = this._state;
+		console.log('initial id', id, generation.skipMatrix);
+		if (generation.skipMatrix) {
+			for (let i = generation.skipMatrix.length - 1; i >= 0; i--) {
+				const skipMatrixEntry = generation.skipMatrix[i];
+				if (skipMatrixEntry.index <= id) {
+					console.log(`${skipMatrixEntry.index} <= ${id}`, `adding ${skipMatrixEntry.numberToSkip}`);
+					id += skipMatrixEntry.numberToSkip;
+				}
+			}
+		}
+
+		console.log('final id', id);
+		return id;
+	}
+
 	private _getRandomGenerationOption(currentOptions: AnswerOption[]): AnswerOption {
 		const { generation } = this._state;
 		const optionsSoFar = currentOptions.map((option) => option.id);
 		let id;
 		do {
-			id = randomIntInclusive(generation.pokemon.startId, generation.pokemon.endId);
+			id = this._computeTrueId(randomIntInclusive(generation.pokemon.startId, generation.pokemon.endId));
 		} while (optionsSoFar.indexOf(id) >= 0);
 
 		return {
 			id: id,
 			order: Math.random()
-		}
+		};
 	}
 
-	private _getRandomOptionFromEvolutionChain(currentOptions: AnswerOption[], data: PokemonData): AnswerOption | undefined {
+	private _getRandomOptionFromEvolutionChain(
+		currentOptions: AnswerOption[],
+		data: PokemonData
+	): AnswerOption | undefined {
 		const { evolutionData } = this._state;
 		let evolutionChain: PokemonEvolutionChain | undefined;
 		const evolutionIdMatch = /\/([0-9]+)\/$/g.exec(data.speciesData.evolution_chain.url);
@@ -204,9 +261,16 @@ export class App extends WidgetBase {
 		return response;
 	}
 
-	private _onGeneartionChange(generation: Generation) {
-		this._state.generation = generation;
-		this._state.generationData = globalData.generations[generation.name];
+	private _onGeneartionChange(generations: Generation[]) {
+		if (generations.length === 1) {
+			this._state.generation = generations[0];
+			this._state.generationData = globalData.generations[generations[0].name];
+		} else {
+			this._state.generation = createCustomGeneration(...generations);
+			this._state.generationData = mergeGenerationData(
+				...generations.map((generation) => globalData.generations[generation.name])
+			);
+		}
 		this._state.quiz = undefined;
 		this._state.difficulty = undefined;
 		this._state.amount = undefined;
@@ -278,9 +342,11 @@ export class App extends WidgetBase {
 	private _renderQuiz(quiz: Quiz): DNode {
 		const { options, generationData, evolutionData } = this._state;
 		const pokemonQuestion = quiz.questions[quiz.currentIndex];
-		const data = generationData.dataById[pokemonQuestion.id];
+		const id = this._computeTrueId(pokemonQuestion.id);
+		const data = generationData.dataById[id];
 
 		let evolutionChain: PokemonEvolutionChain | undefined;
+		console.log(quiz.currentIndex, id, data);
 		const evolutionIdMatch = /\/([0-9]+)\/$/g.exec(data.speciesData.evolution_chain.url);
 		if (evolutionIdMatch) {
 			const evolutionId = +evolutionIdMatch[1];
@@ -302,13 +368,11 @@ export class App extends WidgetBase {
 	private _renderStart(correct: number, total: number): DNode {
 		const { complete, difficulty, quiz, amount } = this._state;
 
-		const percent = Math.round(correct / (!amount || amount === 'all' ? total : amount) * 100);
+		const percent = Math.round((correct / (!amount || amount === 'all' ? total : amount)) * 100);
 
 		return (
 			<div classes={css.startView}>
-				<div>
-					{complete && <h1 classes={css.percent}>{`${percent}%`}</h1>}
-				</div>
+				<div>{complete && <h1 classes={css.percent}>{`${percent}%`}</h1>}</div>
 				<div>
 					{quiz && difficulty && !amount && (
 						<div classes={css.amount}>
@@ -329,9 +393,11 @@ export class App extends WidgetBase {
 					)}
 				</div>
 				<div>
-					{(!quiz || complete) && <Button extraClasses={{ root: css.startQuizButton }} onClick={this._startQuiz}>
-						Start {complete ? 'Another ' : ''}Quiz
-					</Button>}
+					{(!quiz || complete) && (
+						<Button extraClasses={{ root: css.startQuizButton }} onClick={this._startQuiz}>
+							Start {complete ? 'Another ' : ''}Quiz
+						</Button>
+					)}
 				</div>
 			</div>
 		);
@@ -375,7 +441,9 @@ export class App extends WidgetBase {
 							</div>
 						</div>
 					)}
-					{quiz && difficulty && amount && !complete ? this._renderQuiz(quiz) : this._renderStart(correct, total)}
+					{quiz && difficulty && amount && !complete
+						? this._renderQuiz(quiz)
+						: this._renderStart(correct, total)}
 				</div>
 			</div>
 		);
