@@ -8,11 +8,7 @@
     "data": "node data",
     "deploy": "now",
     "now-build": "npm run build && mv ./output/dist /public",
-    "prettier": "prettier --write \"{src,tests,scripts}/**/*.{ts,tsx}\"",
-    "test": "dojo test",
-    "test:unit": "dojo build --mode unit && dojo test --unit --config local",
-    "test:functional": "dojo build --mode functional && dojo test --functional --config local",
-    "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
+    "prettier": "prettier --write \"{src,tests,scripts}/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@dojo/framework": "^4.0.0",
