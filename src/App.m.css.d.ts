@@ -3,6 +3,7 @@ export const mainView: string;
 export const content: string;
 export const nextButton: string;
 export const previousButton: string;
+export const icon: string;
 export const startView: string;
 export const startQuizButton: string;
 export const scoreWrapper: string;

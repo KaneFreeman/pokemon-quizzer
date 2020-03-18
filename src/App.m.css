@@ -3,7 +3,7 @@
 
 .mainView {
 	width: 100%;
-	height: calc(100vh - 56px);
+	height: calc(100vh - 18px);
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -31,8 +31,8 @@
 	top: 56px;
 }
 
-.nextButton i,
-.previousButton i {
+.nextButton .icon,
+.previousButton .icon {
 	font-size: 140px;
 }
 
@@ -69,7 +69,7 @@
 	font-size: 30px;
 }
 
-.score i {
+.score .icon {
 	font-size: 40px;
 	line-height: 40px;
 }
@@ -81,11 +81,11 @@
 	line-height: 40px;
 }
 
-.correct i {
+.correct .icon {
 	color: #78C850;
 }
 
-.incorrect i {
+.incorrect .icon {
 	color: #e6261b;
 }
 

@@ -3,41 +3,37 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "dojo build --mode dev --watch file --serve",
-    "build": "dojo build --mode dist",
+    "build": "dojo build --mode dist && mv ./output/dist ./public",
     "build:dev": "dojo build --mode dev",
     "data": "node data",
-    "deploy": "now",
-    "now-build": "npm run build && mv ./output/dist /public",
-    "prettier": "prettier --write \"{src,tests,scripts}/**/*.{ts,tsx}\""
+    "prettier": "prettier --write \"{src,tests,tools}/**/*.{ts,tsx,css,html}\""
   },
   "dependencies": {
-    "@dojo/framework": "^4.0.0",
-    "@dojo/themes": "^4.0.0",
-    "@dojo/widgets": "^4.0.0",
+    "@dojo/framework": "7.0.0-alpha.7",
+    "@dojo/widgets": "7.0.0-alpha.1",
     "material-design-icons": "^3.0.1",
-    "tslib": "~1.8.1"
+    "tslib": "~1.9.1"
   },
   "devDependencies": {
-    "@dojo/cli": "^4.0.0",
-    "@dojo/cli-build-app": "^4.0.0",
-    "@dojo/cli-test-intern": "^4.0.0",
-    "@types/fs-extra": "^5.0.4",
-    "@types/node": "~9.6.5",
-    "@types/node-fetch": "^2.1.4",
-    "chalk": "^2.4.2",
-    "fs-extra": "^7.0.1",
-    "node-fetch": "^2.3.0",
-    "ora": "^3.0.0",
-    "prettier": "^1.15.3",
+    "@dojo/cli": "7.0.0-alpha.1",
+    "@dojo/cli-build-app": "7.0.0-alpha.7",
+    "@dojo/cli-test-intern": "7.0.0-alpha.5",
+    "@types/fs-extra": "^8.0.1",
+    "@types/node": "^10",
+    "@types/node-fetch": "^2.5.4",
+    "chalk": "^3.0.0",
+    "fs-extra": "^8.1.0",
+    "node-fetch": "^2.6.0",
+    "ora": "^4.0.3",
+    "prettier": "^1.19.1",
     "shx": "^0.3.2",
-    "ts-node": "^7.0.1",
-    "typescript": "~2.6.1"
+    "ts-node": "^8.6.2",
+    "typescript": "~3.4.5"
   },
   "prettier": {
     "singleQuote": true,
     "tabWidth": 4,
     "useTabs": true,
-    "parser": "typescript",
     "printWidth": 120,
     "arrowParens": "always"
   }

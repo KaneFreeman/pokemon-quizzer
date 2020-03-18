@@ -1,6 +1,8 @@
 .root {
 	flex-grow: 1;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .sectionHeader {
@@ -14,7 +16,7 @@
 	width: 100%;
 }
 
-h4 {
+.genus {
 	margin-bottom: 0;
 }
 
@@ -50,7 +52,9 @@ h4 {
 .image {
 	width: 300px;
 	height: 300px;
-  transition: all 0.5s;
+	transition: all 0.5s;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .image.hidden {
@@ -68,6 +72,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+	flex-grow: 1;
 }
 
 .type1 {

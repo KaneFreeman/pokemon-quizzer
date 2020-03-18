@@ -14,7 +14,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/252/encounters",
       "name": "treecko",
-      "order": 323,
+      "order": 325,
       "species": {
         "name": "treecko",
         "url": "https://pokeapi.co/api/v2/pokemon-species/252/"
@@ -202,7 +202,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/253/encounters",
       "name": "grovyle",
-      "order": 324,
+      "order": 326,
       "species": {
         "name": "grovyle",
         "url": "https://pokeapi.co/api/v2/pokemon-species/253/"
@@ -393,7 +393,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/254/encounters",
       "name": "sceptile",
-      "order": 325,
+      "order": 327,
       "species": {
         "name": "sceptile",
         "url": "https://pokeapi.co/api/v2/pokemon-species/254/"
@@ -591,7 +591,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/255/encounters",
       "name": "torchic",
-      "order": 327,
+      "order": 329,
       "species": {
         "name": "torchic",
         "url": "https://pokeapi.co/api/v2/pokemon-species/255/"
@@ -768,7 +768,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/256/encounters",
       "name": "combusken",
-      "order": 328,
+      "order": 330,
       "species": {
         "name": "combusken",
         "url": "https://pokeapi.co/api/v2/pokemon-species/256/"
@@ -955,7 +955,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/257/encounters",
       "name": "blaziken",
-      "order": 329,
+      "order": 331,
       "species": {
         "name": "blaziken",
         "url": "https://pokeapi.co/api/v2/pokemon-species/257/"
@@ -1149,7 +1149,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/258/encounters",
       "name": "mudkip",
-      "order": 331,
+      "order": 333,
       "species": {
         "name": "mudkip",
         "url": "https://pokeapi.co/api/v2/pokemon-species/258/"
@@ -1330,7 +1330,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/259/encounters",
       "name": "marshtomp",
-      "order": 332,
+      "order": 334,
       "species": {
         "name": "marshtomp",
         "url": "https://pokeapi.co/api/v2/pokemon-species/259/"
@@ -1521,7 +1521,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/260/encounters",
       "name": "swampert",
-      "order": 333,
+      "order": 335,
       "species": {
         "name": "swampert",
         "url": "https://pokeapi.co/api/v2/pokemon-species/260/"
@@ -1826,7 +1826,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/261/encounters",
       "name": "poochyena",
-      "order": 335,
+      "order": 337,
       "species": {
         "name": "poochyena",
         "url": "https://pokeapi.co/api/v2/pokemon-species/261/"
@@ -2117,7 +2117,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/262/encounters",
       "name": "mightyena",
-      "order": 336,
+      "order": 338,
       "species": {
         "name": "mightyena",
         "url": "https://pokeapi.co/api/v2/pokemon-species/262/"
@@ -2309,6 +2309,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -2321,6 +2328,13 @@
             "url": "https://pokeapi.co/api/v2/item/28/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -2441,7 +2455,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/263/encounters",
       "name": "zigzagoon",
-      "order": 337,
+      "order": 339,
       "species": {
         "name": "zigzagoon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/263/"
@@ -2630,6 +2644,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -2642,6 +2663,13 @@
             "url": "https://pokeapi.co/api/v2/item/29/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -2868,7 +2896,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/264/encounters",
       "name": "linoone",
-      "order": 338,
+      "order": 340,
       "species": {
         "name": "linoone",
         "url": "https://pokeapi.co/api/v2/pokemon-species/264/"
@@ -3060,6 +3088,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -3075,6 +3110,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -3086,7 +3128,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/265/encounters",
       "name": "wurmple",
-      "order": 339,
+      "order": 341,
       "species": {
         "name": "wurmple",
         "url": "https://pokeapi.co/api/v2/pokemon-species/265/"
@@ -3277,7 +3319,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/266/encounters",
       "name": "silcoon",
-      "order": 340,
+      "order": 342,
       "species": {
         "name": "silcoon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/266/"
@@ -3519,6 +3561,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -3607,7 +3656,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/267/encounters",
       "name": "beautifly",
-      "order": 341,
+      "order": 343,
       "species": {
         "name": "beautifly",
         "url": "https://pokeapi.co/api/v2/pokemon-species/267/"
@@ -3808,7 +3857,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/268/encounters",
       "name": "cascoon",
-      "order": 342,
+      "order": 344,
       "species": {
         "name": "cascoon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/268/"
@@ -4050,6 +4099,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -4138,7 +4194,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/269/encounters",
       "name": "dustox",
-      "order": 343,
+      "order": 345,
       "species": {
         "name": "dustox",
         "url": "https://pokeapi.co/api/v2/pokemon-species/269/"
@@ -4344,6 +4400,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -4355,7 +4418,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/270/encounters",
       "name": "lotad",
-      "order": 344,
+      "order": 346,
       "species": {
         "name": "lotad",
         "url": "https://pokeapi.co/api/v2/pokemon-species/270/"
@@ -4555,6 +4618,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -4566,7 +4636,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/271/encounters",
       "name": "lombre",
-      "order": 345,
+      "order": 347,
       "species": {
         "name": "lombre",
         "url": "https://pokeapi.co/api/v2/pokemon-species/271/"
@@ -4769,6 +4839,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -4780,7 +4857,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/272/encounters",
       "name": "ludicolo",
-      "order": 346,
+      "order": 348,
       "species": {
         "name": "ludicolo",
         "url": "https://pokeapi.co/api/v2/pokemon-species/272/"
@@ -4983,6 +5060,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -4994,7 +5078,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/273/encounters",
       "name": "seedot",
-      "order": 347,
+      "order": 349,
       "species": {
         "name": "seedot",
         "url": "https://pokeapi.co/api/v2/pokemon-species/273/"
@@ -5180,6 +5264,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -5191,7 +5282,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/274/encounters",
       "name": "nuzleaf",
-      "order": 348,
+      "order": 350,
       "species": {
         "name": "nuzleaf",
         "url": "https://pokeapi.co/api/v2/pokemon-species/274/"
@@ -5387,6 +5478,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -5398,7 +5496,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/275/encounters",
       "name": "shiftry",
-      "order": 349,
+      "order": 351,
       "species": {
         "name": "shiftry",
         "url": "https://pokeapi.co/api/v2/pokemon-species/275/"
@@ -5661,7 +5759,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/276/encounters",
       "name": "taillow",
-      "order": 350,
+      "order": 352,
       "species": {
         "name": "taillow",
         "url": "https://pokeapi.co/api/v2/pokemon-species/276/"
@@ -5924,7 +6022,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/277/encounters",
       "name": "swellow",
-      "order": 351,
+      "order": 353,
       "species": {
         "name": "swellow",
         "url": "https://pokeapi.co/api/v2/pokemon-species/277/"
@@ -6123,6 +6221,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -6134,7 +6239,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/278/encounters",
       "name": "wingull",
-      "order": 352,
+      "order": 354,
       "species": {
         "name": "wingull",
         "url": "https://pokeapi.co/api/v2/pokemon-species/278/"
@@ -6332,7 +6437,7 @@
             }
           }
         ],
-        "flavor_text": "Fishermen keep an eye out for Wingull in the\nsky, because wherever they’re circling, the\nocean is sure to be teeming with fish Pokémon.",
+        "flavor_text": "With its long, thin wings, it catches updrafts\nand flies like a glider high up into the sky.",
         "genus": "Seagull Pokémon"
       }
     },
@@ -6355,6 +6460,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -6366,7 +6478,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/279/encounters",
       "name": "pelipper",
-      "order": 353,
+      "order": 355,
       "species": {
         "name": "pelipper",
         "url": "https://pokeapi.co/api/v2/pokemon-species/279/"
@@ -6567,7 +6679,7 @@
             }
           }
         ],
-        "flavor_text": "Gathering food is the work of young males.\nThey store food in their capacious beaks and\ncarry it back to others waiting in the nest.",
+        "flavor_text": "It places small Pokémon into its spacious beak\nand carries them around. No one knows where\nit’s taking them.",
         "genus": "Water Bird Pokémon"
       }
     },
@@ -6585,7 +6697,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/280/encounters",
       "name": "ralts",
-      "order": 354,
+      "order": 356,
       "species": {
         "name": "ralts",
         "url": "https://pokeapi.co/api/v2/pokemon-species/280/"
@@ -6790,7 +6902,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/281/encounters",
       "name": "kirlia",
-      "order": 355,
+      "order": 357,
       "species": {
         "name": "kirlia",
         "url": "https://pokeapi.co/api/v2/pokemon-species/281/"
@@ -6998,7 +7110,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/282/encounters",
       "name": "gardevoir",
-      "order": 356,
+      "order": 358,
       "species": {
         "name": "gardevoir",
         "url": "https://pokeapi.co/api/v2/pokemon-species/282/"
@@ -7218,6 +7330,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -7229,7 +7348,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/283/encounters",
       "name": "surskit",
-      "order": 360,
+      "order": 362,
       "species": {
         "name": "surskit",
         "url": "https://pokeapi.co/api/v2/pokemon-species/283/"
@@ -7406,7 +7525,7 @@
             }
           }
         ],
-        "flavor_text": "When this Pokémon senses danger, a sweet\nfluid oozes from the tip of its head. The taste\nof it disgusts bird Pokémon.",
+        "flavor_text": "If it’s in a pinch, it will secrete a sweet liquid\nfrom the tip of its head. Syrup made from\ngathering that liquid is tasty on bread.",
         "genus": "Pond Skater Pokémon"
       }
     },
@@ -7426,6 +7545,13 @@
             "url": "https://pokeapi.co/api/v2/item/199/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -7552,7 +7678,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/284/encounters",
       "name": "masquerain",
-      "order": 361,
+      "order": 363,
       "species": {
         "name": "masquerain",
         "url": "https://pokeapi.co/api/v2/pokemon-species/284/"
@@ -7732,7 +7858,7 @@
             }
           }
         ],
-        "flavor_text": "Its wings and antennae don’t cope well with\nmoisture. After a rain, it faces sunward to\ndry off.",
+        "flavor_text": "Masquerain intimidates enemies with the eyelike\npatterns of its eyespots. If that doesn’t work, it\ndeftly makes its escape on its set of four wings.",
         "genus": "Eyeball Pokémon"
       }
     },
@@ -7755,6 +7881,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -7767,6 +7900,13 @@
             "url": "https://pokeapi.co/api/v2/item/87/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -7852,7 +7992,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/285/encounters",
       "name": "shroomish",
-      "order": 362,
+      "order": 364,
       "species": {
         "name": "shroomish",
         "url": "https://pokeapi.co/api/v2/pokemon-species/285/"
@@ -8038,6 +8178,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -8050,6 +8197,13 @@
             "url": "https://pokeapi.co/api/v2/item/87/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -8135,7 +8289,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/286/encounters",
       "name": "breloom",
-      "order": 363,
+      "order": 365,
       "species": {
         "name": "breloom",
         "url": "https://pokeapi.co/api/v2/pokemon-species/286/"
@@ -8326,7 +8480,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/287/encounters",
       "name": "slakoth",
-      "order": 364,
+      "order": 366,
       "species": {
         "name": "slakoth",
         "url": "https://pokeapi.co/api/v2/pokemon-species/287/"
@@ -8510,7 +8664,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/288/encounters",
       "name": "vigoroth",
-      "order": 365,
+      "order": 367,
       "species": {
         "name": "vigoroth",
         "url": "https://pokeapi.co/api/v2/pokemon-species/288/"
@@ -8697,7 +8851,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/289/encounters",
       "name": "slaking",
-      "order": 366,
+      "order": 368,
       "species": {
         "name": "slaking",
         "url": "https://pokeapi.co/api/v2/pokemon-species/289/"
@@ -8889,6 +9043,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -8900,7 +9061,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/290/encounters",
       "name": "nincada",
-      "order": 367,
+      "order": 369,
       "species": {
         "name": "nincada",
         "url": "https://pokeapi.co/api/v2/pokemon-species/290/"
@@ -9091,7 +9252,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/291/encounters",
       "name": "ninjask",
-      "order": 368,
+      "order": 370,
       "species": {
         "name": "ninjask",
         "url": "https://pokeapi.co/api/v2/pokemon-species/291/"
@@ -9285,7 +9446,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/292/encounters",
       "name": "shedinja",
-      "order": 369,
+      "order": 371,
       "species": {
         "name": "shedinja",
         "url": "https://pokeapi.co/api/v2/pokemon-species/292/"
@@ -9586,7 +9747,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/293/encounters",
       "name": "whismur",
-      "order": 370,
+      "order": 372,
       "species": {
         "name": "whismur",
         "url": "https://pokeapi.co/api/v2/pokemon-species/293/"
@@ -9881,7 +10042,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/294/encounters",
       "name": "loudred",
-      "order": 371,
+      "order": 373,
       "species": {
         "name": "loudred",
         "url": "https://pokeapi.co/api/v2/pokemon-species/294/"
@@ -10179,7 +10340,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/295/encounters",
       "name": "exploud",
-      "order": 372,
+      "order": 374,
       "species": {
         "name": "exploud",
         "url": "https://pokeapi.co/api/v2/pokemon-species/295/"
@@ -10375,6 +10536,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -10386,7 +10554,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/296/encounters",
       "name": "makuhita",
-      "order": 373,
+      "order": 375,
       "species": {
         "name": "makuhita",
         "url": "https://pokeapi.co/api/v2/pokemon-species/296/"
@@ -10552,7 +10720,7 @@
             }
           }
         ],
-        "flavor_text": "Their daily routine consists of training together\nfirst thing in the morning, eating and napping in\nthe afternoon, and then more training afterward.",
+        "flavor_text": "It practices its slaps by repeatedly slapping\ntree trunks. It has been known to slap an\nExeggutor and get flung away.",
         "genus": "Guts Pokémon"
       }
     },
@@ -10572,6 +10740,13 @@
             "url": "https://pokeapi.co/api/v2/item/198/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -10698,7 +10873,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/297/encounters",
       "name": "hariyama",
-      "order": 374,
+      "order": 376,
       "species": {
         "name": "hariyama",
         "url": "https://pokeapi.co/api/v2/pokemon-species/297/"
@@ -10867,7 +11042,7 @@
             }
           }
         ],
-        "flavor_text": "They love to compare their freakish strength—\nstrength enough to send a truck flying with a\nsingle slap.",
+        "flavor_text": "Although they enjoy comparing their strength,\nthey’re also kind. They value etiquette, praising\nopponents they battle.",
         "genus": "Arm Thrust Pokémon"
       }
     },
@@ -10885,7 +11060,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/298/encounters",
       "name": "azurill",
-      "order": 254,
+      "order": 256,
       "species": {
         "name": "azurill",
         "url": "https://pokeapi.co/api/v2/pokemon-species/298/"
@@ -11187,6 +11362,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -11198,7 +11380,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/299/encounters",
       "name": "nosepass",
-      "order": 375,
+      "order": 377,
       "species": {
         "name": "nosepass",
         "url": "https://pokeapi.co/api/v2/pokemon-species/299/"
@@ -11378,7 +11560,7 @@
             }
           }
         ],
-        "flavor_text": "It uses powerful magnetism to drag its prey\ntoward it. It’s also been known to pull in metal,\nwhich it collects and uses to protect itself.",
+        "flavor_text": "It moves less than an inch a year, but when\nit’s in a jam, it will spin and drill down into the\nground in a split second.",
         "genus": "Compass Pokémon"
       }
     },
@@ -11511,7 +11693,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/300/encounters",
       "name": "skitty",
-      "order": 377,
+      "order": 379,
       "species": {
         "name": "skitty",
         "url": "https://pokeapi.co/api/v2/pokemon-species/300/"
@@ -11821,7 +12003,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/301/encounters",
       "name": "delcatty",
-      "order": 378,
+      "order": 380,
       "species": {
         "name": "delcatty",
         "url": "https://pokeapi.co/api/v2/pokemon-species/301/"
@@ -12024,6 +12206,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -12035,7 +12224,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/302/encounters",
       "name": "sableye",
-      "order": 379,
+      "order": 381,
       "species": {
         "name": "sableye",
         "url": "https://pokeapi.co/api/v2/pokemon-species/302/"
@@ -12215,7 +12404,7 @@
             }
           }
         ],
-        "flavor_text": "This Pokémon is feared. When its gemstone eyes\nbegin to glow with a sinister shine, it’s believed\nthat Sableye will steal people’s spirits away.",
+        "flavor_text": "It digs through the ground with its hard claws\nand crunches down gems with its thick pointy\nteeth. Carbink is its favorite food.",
         "genus": "Darkness Pokémon"
       }
     },
@@ -12309,6 +12498,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -12320,7 +12516,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/303/encounters",
       "name": "mawile",
-      "order": 381,
+      "order": 383,
       "species": {
         "name": "mawile",
         "url": "https://pokeapi.co/api/v2/pokemon-species/303/"
@@ -12504,7 +12700,7 @@
             }
           }
         ],
-        "flavor_text": "Don’t be taken in by this Pokémon’s cute face—it’s very\ndangerous. Mawile fools the foe into letting down its guard,\nthen chomps down with its massive jaws. The steel jaws are\nreally horns that have been transformed.",
+        "flavor_text": "A cunning and terrifying Pokémon, its cuteness\nmakes opponents let down their guard—and\nthen it swallows them whole with its huge jaws.",
         "genus": "Deceiver Pokémon"
       }
     },
@@ -12524,6 +12720,13 @@
             "url": "https://pokeapi.co/api/v2/item/215/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -12650,7 +12853,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/304/encounters",
       "name": "aron",
-      "order": 383,
+      "order": 385,
       "species": {
         "name": "aron",
         "url": "https://pokeapi.co/api/v2/pokemon-species/304/"
@@ -12860,6 +13063,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -12983,7 +13193,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/305/encounters",
       "name": "lairon",
-      "order": 384,
+      "order": 386,
       "species": {
         "name": "lairon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/305/"
@@ -13196,6 +13406,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -13319,7 +13536,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/306/encounters",
       "name": "aggron",
-      "order": 385,
+      "order": 387,
       "species": {
         "name": "aggron",
         "url": "https://pokeapi.co/api/v2/pokemon-species/306/"
@@ -13534,7 +13751,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/307/encounters",
       "name": "meditite",
-      "order": 387,
+      "order": 389,
       "species": {
         "name": "meditite",
         "url": "https://pokeapi.co/api/v2/pokemon-species/307/"
@@ -13739,7 +13956,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/308/encounters",
       "name": "medicham",
-      "order": 388,
+      "order": 390,
       "species": {
         "name": "medicham",
         "url": "https://pokeapi.co/api/v2/pokemon-species/308/"
@@ -13954,7 +14171,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/309/encounters",
       "name": "electrike",
-      "order": 390,
+      "order": 392,
       "species": {
         "name": "electrike",
         "url": "https://pokeapi.co/api/v2/pokemon-species/309/"
@@ -14120,7 +14337,7 @@
             }
           }
         ],
-        "flavor_text": "Electrike runs faster than the human eye can follow.\nThe friction from running is converted into electricity,\nwhich is then stored in this Pokémon’s fur.",
+        "flavor_text": "Friction between the air and its fur produces\nstatic electricity. When Electrike runs, it makes\na crackling sound.",
         "genus": "Lightning Pokémon"
       }
     },
@@ -14138,7 +14355,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/310/encounters",
       "name": "manectric",
-      "order": 391,
+      "order": 393,
       "species": {
         "name": "manectric",
         "url": "https://pokeapi.co/api/v2/pokemon-species/310/"
@@ -14314,7 +14531,7 @@
             }
           }
         ],
-        "flavor_text": "Manectric discharges strong electricity from its mane.\nThe mane is used for collecting electricity in the atmosphere.\nThis Pokémon creates thunderclouds above its head.",
+        "flavor_text": "Manectric can be found beneath unnatural\nthunderclouds. People say it can run at the\nsame speed as lightning striking.",
         "genus": "Discharge Pokémon"
       }
     },
@@ -14337,6 +14554,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -14348,7 +14572,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/311/encounters",
       "name": "plusle",
-      "order": 393,
+      "order": 395,
       "species": {
         "name": "plusle",
         "url": "https://pokeapi.co/api/v2/pokemon-species/311/"
@@ -14537,6 +14761,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -14548,7 +14779,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/312/encounters",
       "name": "minun",
-      "order": 394,
+      "order": 396,
       "species": {
         "name": "minun",
         "url": "https://pokeapi.co/api/v2/pokemon-species/312/"
@@ -14737,6 +14968,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -14748,7 +14986,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/313/encounters",
       "name": "volbeat",
-      "order": 395,
+      "order": 397,
       "species": {
         "name": "volbeat",
         "url": "https://pokeapi.co/api/v2/pokemon-species/313/"
@@ -14941,6 +15179,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -14952,7 +15197,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/314/encounters",
       "name": "illumise",
-      "order": 396,
+      "order": 398,
       "species": {
         "name": "illumise",
         "url": "https://pokeapi.co/api/v2/pokemon-species/314/"
@@ -15145,6 +15390,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -15290,7 +15542,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/315/encounters",
       "name": "roselia",
-      "order": 398,
+      "order": 400,
       "species": {
         "name": "roselia",
         "url": "https://pokeapi.co/api/v2/pokemon-species/315/"
@@ -15620,6 +15872,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -15649,6 +15908,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -15660,7 +15926,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/316/encounters",
       "name": "gulpin",
-      "order": 400,
+      "order": 402,
       "species": {
         "name": "gulpin",
         "url": "https://pokeapi.co/api/v2/pokemon-species/316/"
@@ -15955,6 +16221,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -15984,6 +16257,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -15995,7 +16275,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/317/encounters",
       "name": "swalot",
-      "order": 401,
+      "order": 403,
       "species": {
         "name": "swalot",
         "url": "https://pokeapi.co/api/v2/pokemon-species/317/"
@@ -16187,6 +16467,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -16275,7 +16562,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/318/encounters",
       "name": "carvanha",
-      "order": 402,
+      "order": 404,
       "species": {
         "name": "carvanha",
         "url": "https://pokeapi.co/api/v2/pokemon-species/318/"
@@ -16448,7 +16735,7 @@
             }
           }
         ],
-        "flavor_text": "If they scent the faintest trace of blood, they\nrush to attack en masse. When alone, they’re\nrather cowardly.",
+        "flavor_text": "They’re such cowards that they won’t hunt\nalone. When five or so of them get together,\nthey suddenly turn ferocious!",
         "genus": "Savage Pokémon"
       }
     },
@@ -16468,6 +16755,13 @@
             "url": "https://pokeapi.co/api/v2/item/203/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -16559,7 +16853,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/319/encounters",
       "name": "sharpedo",
-      "order": 403,
+      "order": 405,
       "species": {
         "name": "sharpedo",
         "url": "https://pokeapi.co/api/v2/pokemon-species/319/"
@@ -16742,7 +17036,7 @@
             }
           }
         ],
-        "flavor_text": "It has a sad history. In the past, its dorsal fin\nwas a treasured foodstuff, so this Pokémon\nbecame a victim of overfishing.",
+        "flavor_text": "People believe that carrying one of its\ndiscarded fangs will prevent mishaps at sea,\nso the fangs are made into accessories.",
         "genus": "Brutal Pokémon"
       }
     },
@@ -16760,7 +17054,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/320/encounters",
       "name": "wailmer",
-      "order": 405,
+      "order": 407,
       "species": {
         "name": "wailmer",
         "url": "https://pokeapi.co/api/v2/pokemon-species/320/"
@@ -16937,7 +17231,7 @@
             }
           }
         ],
-        "flavor_text": "It shows off by spraying jets of seawater from\nthe nostrils above its eyes. It eats a solid ton of\nWishiwashi every day.",
+        "flavor_text": "It swims along with its mouth open and\nswallows down seawater along with its food.\nIt sprays excess water out of its nostrils.",
         "genus": "Ball Whale Pokémon"
       }
     },
@@ -16955,7 +17249,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/321/encounters",
       "name": "wailord",
-      "order": 406,
+      "order": 408,
       "species": {
         "name": "wailord",
         "url": "https://pokeapi.co/api/v2/pokemon-species/321/"
@@ -17135,7 +17429,7 @@
             }
           }
         ],
-        "flavor_text": "Its immense size is the reason for its popularity.\nWailord watching is a favorite sightseeing\nactivity in various parts of the world.",
+        "flavor_text": "They eat so many fish Pokémon that when\nWailord become too numerous, fishermen have\nto chase them off.",
         "genus": "Float Whale Pokémon"
       }
     },
@@ -17260,7 +17554,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/322/encounters",
       "name": "numel",
-      "order": 407,
+      "order": 409,
       "species": {
         "name": "numel",
         "url": "https://pokeapi.co/api/v2/pokemon-species/322/"
@@ -17558,7 +17852,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/323/encounters",
       "name": "camerupt",
-      "order": 408,
+      "order": 410,
       "species": {
         "name": "camerupt",
         "url": "https://pokeapi.co/api/v2/pokemon-species/323/"
@@ -17764,6 +18058,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -17789,7 +18090,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/324/encounters",
       "name": "torkoal",
-      "order": 410,
+      "order": 412,
       "species": {
         "name": "torkoal",
         "url": "https://pokeapi.co/api/v2/pokemon-species/324/"
@@ -17955,7 +18256,7 @@
             }
           }
         ],
-        "flavor_text": "If the fire burning within its shell goes out, it will\ndie. Those who wish to raise one in their home\nmust always keep something flammable at hand.",
+        "flavor_text": "You can tell how it’s feeling by the smoke\nspouting from its shell. Tremendous velocity\nis a sign of good health.",
         "genus": "Coal Pokémon"
       }
     },
@@ -18053,7 +18354,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/325/encounters",
       "name": "spoink",
-      "order": 411,
+      "order": 413,
       "species": {
         "name": "spoink",
         "url": "https://pokeapi.co/api/v2/pokemon-species/325/"
@@ -18324,7 +18625,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/326/encounters",
       "name": "grumpig",
-      "order": 412,
+      "order": 414,
       "species": {
         "name": "grumpig",
         "url": "https://pokeapi.co/api/v2/pokemon-species/326/"
@@ -18625,7 +18926,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/327/encounters",
       "name": "spinda",
-      "order": 413,
+      "order": 415,
       "species": {
         "name": "spinda",
         "url": "https://pokeapi.co/api/v2/pokemon-species/327/"
@@ -18795,7 +19096,7 @@
             }
           }
         ],
-        "flavor_text": "Each and every Spinda has a slightly different\nconfiguration of spots. There are collectors who\nenjoy the tiny differences in their spot patterns.",
+        "flavor_text": "Its steps are shaky and stumbling. Walking for a\nlong time makes it feel sick.",
         "genus": "Spot Panda Pokémon"
       }
     },
@@ -18815,6 +19116,13 @@
             "url": "https://pokeapi.co/api/v2/item/214/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -18941,7 +19249,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/328/encounters",
       "name": "trapinch",
-      "order": 414,
+      "order": 416,
       "species": {
         "name": "trapinch",
         "url": "https://pokeapi.co/api/v2/pokemon-species/328/"
@@ -19114,7 +19422,7 @@
             }
           }
         ],
-        "flavor_text": "As it digs through the sand, its giant jaws\ncrush any rocks that obstruct its path. It builds\na funnel-shaped nest.",
+        "flavor_text": "Its jaws are strong enough to crush rocks but\nso heavy that it can’t get up if it flips over.\nSandile seize those moments as their chance.",
         "genus": "Ant Pit Pokémon"
       }
     },
@@ -19132,7 +19440,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/329/encounters",
       "name": "vibrava",
-      "order": 415,
+      "order": 417,
       "species": {
         "name": "vibrava",
         "url": "https://pokeapi.co/api/v2/pokemon-species/329/"
@@ -19315,7 +19623,7 @@
             }
           }
         ],
-        "flavor_text": "To help make its wings grow, it dissolves\nquantities of prey in its digestive juices and\nguzzles them down every day.",
+        "flavor_text": "It vibrates its wings to generate ultrasonic\nwaves, causing its prey to faint. Then it buries\nthe prey alive in the sand to preserve it.",
         "genus": "Vibration Pokémon"
       }
     },
@@ -19333,7 +19641,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/330/encounters",
       "name": "flygon",
-      "order": 416,
+      "order": 418,
       "species": {
         "name": "flygon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/330/"
@@ -19516,7 +19824,7 @@
             }
           }
         ],
-        "flavor_text": "This Pokémon hides in the heart of sandstorms\nit creates and seldom appears where people\ncan see it.",
+        "flavor_text": "By flapping their wings, Flygon cause\nsandstorms that conceal Krookodile.\nThe team then splits the prey they catch.",
         "genus": "Mystic Pokémon"
       }
     },
@@ -19579,6 +19887,13 @@
             "url": "https://pokeapi.co/api/v2/item/265/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -19670,7 +19985,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/331/encounters",
       "name": "cacnea",
-      "order": 417,
+      "order": 419,
       "species": {
         "name": "cacnea",
         "url": "https://pokeapi.co/api/v2/pokemon-species/331/"
@@ -19899,6 +20214,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -19987,7 +20309,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/332/encounters",
       "name": "cacturne",
-      "order": 418,
+      "order": 420,
       "species": {
         "name": "cacturne",
         "url": "https://pokeapi.co/api/v2/pokemon-species/332/"
@@ -20178,7 +20500,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/333/encounters",
       "name": "swablu",
-      "order": 419,
+      "order": 421,
       "species": {
         "name": "swablu",
         "url": "https://pokeapi.co/api/v2/pokemon-species/333/"
@@ -20387,7 +20709,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/334/encounters",
       "name": "altaria",
-      "order": 420,
+      "order": 422,
       "species": {
         "name": "altaria",
         "url": "https://pokeapi.co/api/v2/pokemon-species/334/"
@@ -20611,6 +20933,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -20699,7 +21028,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/335/encounters",
       "name": "zangoose",
-      "order": 422,
+      "order": 424,
       "species": {
         "name": "zangoose",
         "url": "https://pokeapi.co/api/v2/pokemon-species/335/"
@@ -20917,6 +21246,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -20928,7 +21264,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/336/encounters",
       "name": "seviper",
-      "order": 423,
+      "order": 425,
       "species": {
         "name": "seviper",
         "url": "https://pokeapi.co/api/v2/pokemon-species/336/"
@@ -21128,6 +21464,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -21255,6 +21598,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -21302,7 +21652,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/337/encounters",
       "name": "lunatone",
-      "order": 424,
+      "order": 426,
       "species": {
         "name": "lunatone",
         "url": "https://pokeapi.co/api/v2/pokemon-species/337/"
@@ -21505,6 +21855,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -21632,6 +21989,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -21679,7 +22043,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/338/encounters",
       "name": "solrock",
-      "order": 425,
+      "order": 427,
       "species": {
         "name": "solrock",
         "url": "https://pokeapi.co/api/v2/pokemon-species/338/"
@@ -21877,7 +22241,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/339/encounters",
       "name": "barboach",
-      "order": 426,
+      "order": 428,
       "species": {
         "name": "barboach",
         "url": "https://pokeapi.co/api/v2/pokemon-species/339/"
@@ -22064,7 +22428,7 @@
             }
           }
         ],
-        "flavor_text": "Its slippery body is hard to grasp, so much so\nthat there are festivals where people compete\nto see how many they can catch barehanded.",
+        "flavor_text": "Its entire body is gooey. When pecked at by\nbird Pokémon, it slips and slides its way\nto freedom.",
         "genus": "Whiskers Pokémon"
       }
     },
@@ -22082,7 +22446,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/340/encounters",
       "name": "whiscash",
-      "order": 427,
+      "order": 429,
       "species": {
         "name": "whiscash",
         "url": "https://pokeapi.co/api/v2/pokemon-species/340/"
@@ -22272,7 +22636,7 @@
             }
           }
         ],
-        "flavor_text": "Sighting Whiscash leaping from the water\nis believed to herald an earthquake.",
+        "flavor_text": "Whiscash shakes the ground at high intensities\nto intimidate its opponents. It swallows its prey\nwhole—along with mud from the swamp floor.",
         "genus": "Whiskers Pokémon"
       }
     },
@@ -22290,7 +22654,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/341/encounters",
       "name": "corphish",
-      "order": 428,
+      "order": 430,
       "species": {
         "name": "corphish",
         "url": "https://pokeapi.co/api/v2/pokemon-species/341/"
@@ -22467,7 +22831,7 @@
             }
           }
         ],
-        "flavor_text": "Corphish catches prey with its sharp claws. It has no\nlikes or dislikes when it comes to food—it will eat anything.\nThis Pokémon has no trouble living in filthy water.",
+        "flavor_text": "Individuals that have been set free by Trainers\nwho could no longer raise them have become\ncommon, and they can now be found in Alola.",
         "genus": "Ruffian Pokémon"
       }
     },
@@ -22485,7 +22849,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/342/encounters",
       "name": "crawdaunt",
-      "order": 429,
+      "order": 431,
       "species": {
         "name": "crawdaunt",
         "url": "https://pokeapi.co/api/v2/pokemon-species/342/"
@@ -22672,7 +23036,7 @@
             }
           }
         ],
-        "flavor_text": "Crawdaunt molts (sheds) its shell regularly. Immediately after\nmolting, its shell is soft and tender. Until the shell hardens,\nthis Pokémon hides in its streambed burrow to avoid attack\nfrom its foes.",
+        "flavor_text": "Its temperament is rough and it loves to fight,\nbut as soon as its pincers break off, it turns\ncowardly. It stays timid until they grow back.",
         "genus": "Rogue Pokémon"
       }
     },
@@ -22695,6 +23059,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -22706,7 +23077,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/343/encounters",
       "name": "baltoy",
-      "order": 430,
+      "order": 432,
       "species": {
         "name": "baltoy",
         "url": "https://pokeapi.co/api/v2/pokemon-species/343/"
@@ -22879,7 +23250,7 @@
             }
           }
         ],
-        "flavor_text": "As soon as it spots others of its kind, Baltoy congregates with\nthem and then begins crying noisily in unison. This Pokémon\nsleeps while cleverly balancing itself on its one foot.",
+        "flavor_text": "Depictions of Pokémon similar to Baltoy have\nbeen found on the walls of caves where\nprimitive humans lived.",
         "genus": "Clay Doll Pokémon"
       }
     },
@@ -22902,6 +23273,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -22913,7 +23291,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/344/encounters",
       "name": "claydol",
-      "order": 431,
+      "order": 433,
       "species": {
         "name": "claydol",
         "url": "https://pokeapi.co/api/v2/pokemon-species/344/"
@@ -23089,7 +23467,7 @@
             }
           }
         ],
-        "flavor_text": "Claydol is an enigma that appeared from a clay statue made by\nan ancient civilization dating back 20,000 years. This Pokémon\nshoots beams from both its hands.",
+        "flavor_text": "If it gets wet, its body melts. When rain starts\nto fall, it wraps its whole body up with its\npsychic powers to protect itself.",
         "genus": "Clay Doll Pokémon"
       }
     },
@@ -23109,6 +23487,13 @@
             "url": "https://pokeapi.co/api/v2/item/273/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -23200,7 +23585,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/345/encounters",
       "name": "lileep",
-      "order": 432,
+      "order": 434,
       "species": {
         "name": "lileep",
         "url": "https://pokeapi.co/api/v2/pokemon-species/345/"
@@ -23366,7 +23751,7 @@
             }
           }
         ],
-        "flavor_text": "Lileep is an ancient Pokémon that was regenerated from a\nfossil. It remains permanently anchored to a rock. From its\nimmobile perch, this Pokémon intently scans for prey with its\ntwo eyes.",
+        "flavor_text": "In ancient times, it lived in warm seas. It\ndisguised itself as seaweed to ambush its prey\nand devoured them whole when they got close.",
         "genus": "Sea Lily Pokémon"
       }
     },
@@ -23386,6 +23771,13 @@
             "url": "https://pokeapi.co/api/v2/item/273/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -23477,7 +23869,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/346/encounters",
       "name": "cradily",
-      "order": 433,
+      "order": 435,
       "species": {
         "name": "cradily",
         "url": "https://pokeapi.co/api/v2/pokemon-species/346/"
@@ -23646,7 +24038,7 @@
             }
           }
         ],
-        "flavor_text": "Cradily’s body serves as an anchor, preventing it from being\nwashed away in rough seas. This Pokémon secretes a strong\ndigestive fluid from its tentacles.",
+        "flavor_text": "Normally, it lived on shallow sea shoals. When\nthe tide went out, this Pokémon came up on\nland to search for prey.",
         "genus": "Barnacle Pokémon"
       }
     },
@@ -23664,7 +24056,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/347/encounters",
       "name": "anorith",
-      "order": 434,
+      "order": 436,
       "species": {
         "name": "anorith",
         "url": "https://pokeapi.co/api/v2/pokemon-species/347/"
@@ -23837,7 +24229,7 @@
             }
           }
         ],
-        "flavor_text": "Anorith is said to be a type of Pokémon predecessor, with\neight wings at the sides of its body. This Pokémon swam in the\nprimordial sea by undulating these eight wings.",
+        "flavor_text": "When restored Anorith are released into the\nocean, they don’t thrive, because the water\ncomposition has changed since their era.",
         "genus": "Old Shrimp Pokémon"
       }
     },
@@ -23855,7 +24247,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/348/encounters",
       "name": "armaldo",
-      "order": 435,
+      "order": 437,
       "species": {
         "name": "armaldo",
         "url": "https://pokeapi.co/api/v2/pokemon-species/348/"
@@ -24031,7 +24423,7 @@
             }
           }
         ],
-        "flavor_text": "Armaldo is a Pokémon species that became extinct in\nprehistoric times. This Pokémon is said to have walked\non its hind legs, which would have been more convenient\nfor life on land.",
+        "flavor_text": "It lived on land and went out into the sea to\nhunt for prey. Its sharp claws were its\ngreatest weapon.",
         "genus": "Plate Pokémon"
       }
     },
@@ -24049,7 +24441,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/349/encounters",
       "name": "feebas",
-      "order": 436,
+      "order": 438,
       "species": {
         "name": "feebas",
         "url": "https://pokeapi.co/api/v2/pokemon-species/349/"
@@ -24226,7 +24618,7 @@
             }
           }
         ],
-        "flavor_text": "Although unattractive and unpopular, this\nPokémon’s marvelous vitality has made it a\nsubject of research.",
+        "flavor_text": "They look ragged, so no one catches them. They\nlook like they’d taste bad, so predators won’t\neat them. And their numbers continue to grow.",
         "genus": "Fish Pokémon"
       }
     },
@@ -24244,7 +24636,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/350/encounters",
       "name": "milotic",
-      "order": 437,
+      "order": 439,
       "species": {
         "name": "milotic",
         "url": "https://pokeapi.co/api/v2/pokemon-species/350/"
@@ -24424,7 +24816,7 @@
             }
           }
         ],
-        "flavor_text": "It lives at the bottom of clear lakes. In times of\nwar, it shows itself, which soothes people’s\nminds and hearts.",
+        "flavor_text": "While Milotic is said to be the most beautiful\nPokémon, Trainers who like Feebas and have\nraised it are seemingly disappointed by Milotic.",
         "genus": "Tender Pokémon"
       }
     },
@@ -24444,6 +24836,13 @@
             "url": "https://pokeapi.co/api/v2/item/220/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -24570,7 +24969,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/351/encounters",
       "name": "castform",
-      "order": 438,
+      "order": 440,
       "species": {
         "name": "castform",
         "url": "https://pokeapi.co/api/v2/pokemon-species/351/"
@@ -24769,7 +25168,7 @@
             }
           }
         ],
-        "flavor_text": "Its form changes on its own, due to its cells’\nsensitive reactions to temperature and humidity.",
+        "flavor_text": "Although its form changes with the weather,\nthat is apparently the result of a chemical\nreaction and not the result of its own free will.",
         "genus": "Weather Pokémon"
       }
     },
@@ -24894,7 +25293,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/352/encounters",
       "name": "kecleon",
-      "order": 442,
+      "order": 444,
       "species": {
         "name": "kecleon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/352/"
@@ -25060,7 +25459,7 @@
             }
           }
         ],
-        "flavor_text": "Kecleon alters its body coloration to blend in with its\nsurroundings, allowing it to sneak up on its prey unnoticed.\nThen it lashes out with its long, stretchy tongue to instantly\nensnare the unsuspecting target.",
+        "flavor_text": "It changes its hue to blend into its surroundings.\nIf no one takes notice of it for too long, it will\npout and never reveal itself.",
         "genus": "Color Swap Pokémon"
       }
     },
@@ -25080,6 +25479,13 @@
             "url": "https://pokeapi.co/api/v2/item/224/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -25206,7 +25612,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/353/encounters",
       "name": "shuppet",
-      "order": 443,
+      "order": 445,
       "species": {
         "name": "shuppet",
         "url": "https://pokeapi.co/api/v2/pokemon-species/353/"
@@ -25379,7 +25785,7 @@
             }
           }
         ],
-        "flavor_text": "Shuppet grows by feeding on dark emotions, such as\nvengefulness and envy, in the hearts of people. It roams\nthrough cities in search of grudges that taint people.",
+        "flavor_text": "It eats up emotions like malice, jealousy, and\nresentment, so some people are grateful for\nits presence.",
         "genus": "Puppet Pokémon"
       }
     },
@@ -25399,6 +25805,13 @@
             "url": "https://pokeapi.co/api/v2/item/224/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -25525,7 +25938,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/354/encounters",
       "name": "banette",
-      "order": 444,
+      "order": 446,
       "species": {
         "name": "banette",
         "url": "https://pokeapi.co/api/v2/pokemon-species/354/"
@@ -25708,7 +26121,7 @@
             }
           }
         ],
-        "flavor_text": "A cursed energy permeated the stuffing of a discarded and\nforgotten plush doll, giving it new life as Banette.\nThe Pokémon’s energy would escape if it were to ever open\nits mouth.",
+        "flavor_text": "It’s a stuffed toy that was thrown away and\nbecame possessed, ever searching for the one\nwho threw it away so it can exact its revenge.",
         "genus": "Marionette Pokémon"
       }
     },
@@ -25802,6 +26215,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -25848,7 +26268,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/355/encounters",
       "name": "duskull",
-      "order": 446,
+      "order": 448,
       "species": {
         "name": "duskull",
         "url": "https://pokeapi.co/api/v2/pokemon-species/355/"
@@ -26115,6 +26535,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -26161,7 +26588,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/356/encounters",
       "name": "dusclops",
-      "order": 447,
+      "order": 449,
       "species": {
         "name": "dusclops",
         "url": "https://pokeapi.co/api/v2/pokemon-species/356/"
@@ -26355,7 +26782,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/357/encounters",
       "name": "tropius",
-      "order": 449,
+      "order": 451,
       "species": {
         "name": "tropius",
         "url": "https://pokeapi.co/api/v2/pokemon-species/357/"
@@ -26539,7 +26966,7 @@
             }
           }
         ],
-        "flavor_text": "Children of the southern tropics eat as snacks the fruit that\ngrows in bunches around the neck of Tropius. This Pokémon\nflies by flapping the leaves on its back as if they were wings.",
+        "flavor_text": "The bunches of fruit growing around the necks\nof Tropius in Alola are especially sweet\ncompared to those in other regions.",
         "genus": "Fruit Pokémon"
       }
     },
@@ -26633,6 +27060,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -26644,7 +27078,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/358/encounters",
       "name": "chimecho",
-      "order": 451,
+      "order": 453,
       "species": {
         "name": "chimecho",
         "url": "https://pokeapi.co/api/v2/pokemon-species/358/"
@@ -26852,7 +27286,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/359/encounters",
       "name": "absol",
-      "order": 452,
+      "order": 454,
       "species": {
         "name": "absol",
         "url": "https://pokeapi.co/api/v2/pokemon-species/359/"
@@ -27039,7 +27473,7 @@
             }
           }
         ],
-        "flavor_text": "Although it’s said to bring disaster, in actuality,\nthis Pokémon possesses a calm disposition and\nwarns people of any crises that loom.",
+        "flavor_text": "The only thing unlucky about Absol is its\nappearance. It protects fields and warns people\nof disaster, so one ought to be grateful for it.",
         "genus": "Disaster Pokémon"
       }
     },
@@ -27057,7 +27491,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/360/encounters",
       "name": "wynaut",
-      "order": 275,
+      "order": 277,
       "species": {
         "name": "wynaut",
         "url": "https://pokeapi.co/api/v2/pokemon-species/360/"
@@ -27317,6 +27751,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -27328,7 +27769,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/361/encounters",
       "name": "snorunt",
-      "order": 454,
+      "order": 456,
       "species": {
         "name": "snorunt",
         "url": "https://pokeapi.co/api/v2/pokemon-species/361/"
@@ -27505,7 +27946,7 @@
             }
           }
         ],
-        "flavor_text": "It can only survive in cold areas. It bounces\nhappily around, even in environments as cold as\n-150 degrees Fahrenheit.",
+        "flavor_text": "It feeds mainly on ice and snow. It’s only able to\nsurvive in a limited number of places in the\nwarm Alola region.",
         "genus": "Snow Hat Pokémon"
       }
     },
@@ -27638,7 +28079,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/362/encounters",
       "name": "glalie",
-      "order": 455,
+      "order": 457,
       "species": {
         "name": "glalie",
         "url": "https://pokeapi.co/api/v2/pokemon-species/362/"
@@ -27825,7 +28266,7 @@
             }
           }
         ],
-        "flavor_text": "Its prey is instantaneously frozen stiff by the\ncold air it exhales from its huge mouth. While\nthey’re in that frozen state, it gobbles them up.",
+        "flavor_text": "It freezes its prey and chews them whole.\nHowever, it prefers to eat Pokémon like Vanillite\nthat are already frozen.",
         "genus": "Face Pokémon"
       }
     },
@@ -27843,7 +28284,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/363/encounters",
       "name": "spheal",
-      "order": 458,
+      "order": 460,
       "species": {
         "name": "spheal",
         "url": "https://pokeapi.co/api/v2/pokemon-species/363/"
@@ -28045,7 +28486,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/364/encounters",
       "name": "sealeo",
-      "order": 459,
+      "order": 461,
       "species": {
         "name": "sealeo",
         "url": "https://pokeapi.co/api/v2/pokemon-species/364/"
@@ -28250,7 +28691,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/365/encounters",
       "name": "walrein",
-      "order": 460,
+      "order": 462,
       "species": {
         "name": "walrein",
         "url": "https://pokeapi.co/api/v2/pokemon-species/365/"
@@ -28503,6 +28944,13 @@
             {
               "rarity": 50,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 50,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -28515,6 +28963,13 @@
             "url": "https://pokeapi.co/api/v2/item/89/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -28606,7 +29061,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/366/encounters",
       "name": "clamperl",
-      "order": 461,
+      "order": 463,
       "species": {
         "name": "clamperl",
         "url": "https://pokeapi.co/api/v2/pokemon-species/366/"
@@ -28772,7 +29227,7 @@
             }
           }
         ],
-        "flavor_text": "Clamperl grows while being protected by its rock-hard shell.\nWhen its body becomes too large to fit inside the shell, it is\nsure evidence that this Pokémon is getting close to evolution.",
+        "flavor_text": "Despite its appearance, it’s carnivorous. It\nclamps down on its prey with both sides of its\nshell and doesn’t let go until they stop moving.",
         "genus": "Bivalve Pokémon"
       }
     },
@@ -28792,6 +29247,13 @@
             "url": "https://pokeapi.co/api/v2/item/203/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -28883,7 +29345,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/367/encounters",
       "name": "huntail",
-      "order": 462,
+      "order": 464,
       "species": {
         "name": "huntail",
         "url": "https://pokeapi.co/api/v2/pokemon-species/367/"
@@ -29052,7 +29514,7 @@
             }
           }
         ],
-        "flavor_text": "Huntail’s tail is shaped like a fish. It uses the tail to attract\nprey, then swallows the prey whole with its large, gaping\nmouth. This Pokémon swims by wiggling its slender body\nlike a snake.",
+        "flavor_text": "It’s not the strongest swimmer. It wags its tail to\nlure in its prey and then gulps them down as\nsoon as they get close.",
         "genus": "Deep Sea Pokémon"
       }
     },
@@ -29072,6 +29534,13 @@
             "url": "https://pokeapi.co/api/v2/item/204/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -29163,7 +29632,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/368/encounters",
       "name": "gorebyss",
-      "order": 463,
+      "order": 465,
       "species": {
         "name": "gorebyss",
         "url": "https://pokeapi.co/api/v2/pokemon-species/368/"
@@ -29332,7 +29801,7 @@
             }
           }
         ],
-        "flavor_text": "Although Gorebyss is the very picture of elegance and beauty\nwhile swimming, it is also cruel. When it spots prey, this\nPokémon inserts its thin mouth into the prey’s body and drains\nthe prey of its body fluids.",
+        "flavor_text": "The color of its body changes with the water\ntemperature. The coloration of Gorebyss in Alola\nis almost blindingly vivid.",
         "genus": "South Sea Pokémon"
       }
     },
@@ -29395,6 +29864,13 @@
             "url": "https://pokeapi.co/api/v2/item/204/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -29486,7 +29962,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/369/encounters",
       "name": "relicanth",
-      "order": 464,
+      "order": 466,
       "species": {
         "name": "relicanth",
         "url": "https://pokeapi.co/api/v2/pokemon-species/369/"
@@ -29663,7 +30139,7 @@
             }
           }
         ],
-        "flavor_text": "It was fortuitously discovered during a deep sea\nexpedition. Its teeth have atrophied, so it now\nsurvives on microscopic organisms it sucks up.",
+        "flavor_text": "Thought to have gone extinct, Relicanth was\ngiven a name that is a variation of the name of\nthe person who discovered it.",
         "genus": "Longevity Pokémon"
       }
     },
@@ -29683,6 +30159,13 @@
             "url": "https://pokeapi.co/api/v2/item/93/"
           },
           "version_details": [
+            {
+              "rarity": 50,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 50,
               "version": {
@@ -29809,7 +30292,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/370/encounters",
       "name": "luvdisc",
-      "order": 465,
+      "order": 467,
       "species": {
         "name": "luvdisc",
         "url": "https://pokeapi.co/api/v2/pokemon-species/370/"
@@ -29975,7 +30458,7 @@
             }
           }
         ],
-        "flavor_text": "Loving couples have a soft spot for this\nPokémon, so honeymoon hotels often release\nthis Pokémon into their pools.",
+        "flavor_text": "There was an era when it was overfished due to\nthe rumor that having one of its heart-shaped\nscales would enable you to find a sweetheart.",
         "genus": "Rendezvous Pokémon"
       }
     },
@@ -30038,6 +30521,13 @@
             "url": "https://pokeapi.co/api/v2/item/227/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -30129,7 +30619,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/371/encounters",
       "name": "bagon",
-      "order": 466,
+      "order": 468,
       "species": {
         "name": "bagon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/371/"
@@ -30295,7 +30785,7 @@
             }
           }
         ],
-        "flavor_text": "With its steel-hard stone head, it headbutts\nindiscriminately. This is because of the stress\nit feels at being unable to fly.",
+        "flavor_text": "Whenever it sees bird Pokémon flying through\nthe sky, it becomes envious and smashes its\nsurroundings to bits with headbutts.",
         "genus": "Rock Head Pokémon"
       }
     },
@@ -30358,6 +30848,13 @@
             "url": "https://pokeapi.co/api/v2/item/227/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -30449,7 +30946,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/372/encounters",
       "name": "shelgon",
-      "order": 467,
+      "order": 469,
       "species": {
         "name": "shelgon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/372/"
@@ -30618,7 +31115,7 @@
             }
           }
         ],
-        "flavor_text": "They lurk deep within caves—motionless,\nneither eating nor drinking. Why they don’t die is\nnot known.",
+        "flavor_text": "The cells within its body are changing at a\nbewildering pace. Its hard shell is made from\nthe same substance as bone.",
         "genus": "Endurance Pokémon"
       }
     },
@@ -30681,6 +31178,13 @@
             "url": "https://pokeapi.co/api/v2/item/227/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -30772,7 +31276,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/373/encounters",
       "name": "salamence",
-      "order": 468,
+      "order": 470,
       "species": {
         "name": "salamence",
         "url": "https://pokeapi.co/api/v2/pokemon-species/373/"
@@ -30955,7 +31459,7 @@
             }
           }
         ],
-        "flavor_text": "It flies around on its wings, which have grown in\nat last. In its happiness, it gushes hot flames,\nburning up the fields it passes over.",
+        "flavor_text": "Overjoyed at finally being able to fly, it flies all\nover the place and usually doesn’t land until it’s\ncompletely exhausted and needs to sleep.",
         "genus": "Dragon Pokémon"
       }
     },
@@ -30975,6 +31479,13 @@
             "url": "https://pokeapi.co/api/v2/item/210/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -31101,7 +31612,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/374/encounters",
       "name": "beldum",
-      "order": 470,
+      "order": 472,
       "species": {
         "name": "beldum",
         "url": "https://pokeapi.co/api/v2/pokemon-species/374/"
@@ -31281,7 +31792,7 @@
             }
           }
         ],
-        "flavor_text": "With magnetic traction, it pulls its opponents in\nclose. When they’re in range, it slashes them\nwith its rear claws.",
+        "flavor_text": "Instead of blood, magnetism flows through its\nbody. When it’s feeling bad, try giving it\na magnet.",
         "genus": "Iron Ball Pokémon"
       }
     },
@@ -31301,6 +31812,13 @@
             "url": "https://pokeapi.co/api/v2/item/210/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -31427,7 +31945,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/375/encounters",
       "name": "metang",
-      "order": 471,
+      "order": 473,
       "species": {
         "name": "metang",
         "url": "https://pokeapi.co/api/v2/pokemon-species/375/"
@@ -31610,7 +32128,7 @@
             }
           }
         ],
-        "flavor_text": "It adores magnetic minerals, so it pursues\nNosepass at speeds exceeding 60 mph.",
+        "flavor_text": "With its two brains, it fires powerful psychic\nenergy to stop its prey in their tracks.",
         "genus": "Iron Claw Pokémon"
       }
     },
@@ -31630,6 +32148,13 @@
             "url": "https://pokeapi.co/api/v2/item/210/"
           },
           "version_details": [
+            {
+              "rarity": 5,
+              "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
             {
               "rarity": 5,
               "version": {
@@ -31756,7 +32281,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/376/encounters",
       "name": "metagross",
-      "order": 472,
+      "order": 474,
       "species": {
         "name": "metagross",
         "url": "https://pokeapi.co/api/v2/pokemon-species/376/"
@@ -31946,7 +32471,7 @@
             }
           }
         ],
-        "flavor_text": "A linkage of two Metang, this Pokémon can\nperform any calculation in a flash by utilizing\nparallel processing in its four brains.",
+        "flavor_text": "It boasts not only psychic powers but also\nfantastic strength. It grabs its prey with its four\nlegs and holds them in place with its claws.",
         "genus": "Iron Leg Pokémon"
       }
     },
@@ -31964,7 +32489,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/377/encounters",
       "name": "regirock",
-      "order": 474,
+      "order": 476,
       "species": {
         "name": "regirock",
         "url": "https://pokeapi.co/api/v2/pokemon-species/377/"
@@ -32141,7 +32666,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/378/encounters",
       "name": "regice",
-      "order": 475,
+      "order": 477,
       "species": {
         "name": "regice",
         "url": "https://pokeapi.co/api/v2/pokemon-species/378/"
@@ -32318,7 +32843,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/379/encounters",
       "name": "registeel",
-      "order": 476,
+      "order": 478,
       "species": {
         "name": "registeel",
         "url": "https://pokeapi.co/api/v2/pokemon-species/379/"
@@ -32502,7 +33027,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/380/encounters",
       "name": "latias",
-      "order": 477,
+      "order": 479,
       "species": {
         "name": "latias",
         "url": "https://pokeapi.co/api/v2/pokemon-species/380/"
@@ -32693,7 +33218,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/381/encounters",
       "name": "latios",
-      "order": 479,
+      "order": 481,
       "species": {
         "name": "latios",
         "url": "https://pokeapi.co/api/v2/pokemon-species/381/"
@@ -32884,7 +33409,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/382/encounters",
       "name": "kyogre",
-      "order": 481,
+      "order": 483,
       "species": {
         "name": "kyogre",
         "url": "https://pokeapi.co/api/v2/pokemon-species/382/"
@@ -33068,7 +33593,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/383/encounters",
       "name": "groudon",
-      "order": 483,
+      "order": 485,
       "species": {
         "name": "groudon",
         "url": "https://pokeapi.co/api/v2/pokemon-species/383/"
@@ -33259,7 +33784,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/384/encounters",
       "name": "rayquaza",
-      "order": 485,
+      "order": 487,
       "species": {
         "name": "rayquaza",
         "url": "https://pokeapi.co/api/v2/pokemon-species/384/"
@@ -33462,6 +33987,13 @@
             {
               "rarity": 5,
               "version": {
+                "name": "ultra-sun",
+                "url": "https://pokeapi.co/api/v2/version/29/"
+              }
+            },
+            {
+              "rarity": 5,
+              "version": {
                 "name": "moon",
                 "url": "https://pokeapi.co/api/v2/version/28/"
               }
@@ -33585,7 +34117,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/385/encounters",
       "name": "jirachi",
-      "order": 487,
+      "order": 489,
       "species": {
         "name": "jirachi",
         "url": "https://pokeapi.co/api/v2/pokemon-species/385/"
@@ -33769,7 +34301,7 @@
       "is_default": true,
       "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/386/encounters",
       "name": "deoxys-normal",
-      "order": 488,
+      "order": 490,
       "species": {
         "name": "deoxys",
         "url": "https://pokeapi.co/api/v2/pokemon-species/386/"

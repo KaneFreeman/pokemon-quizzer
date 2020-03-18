@@ -1,20 +1,20 @@
-import WidgetBase from '@dojo/framework/widget-core/WidgetBase';
-import { DNode } from '@dojo/framework/widget-core/interfaces';
-import { tsx } from '@dojo/framework/widget-core/tsx';
+import WidgetBase from '@dojo/framework/core/WidgetBase';
+import { DNode } from '@dojo/framework/core/interfaces';
+import { tsx } from '@dojo/framework/core/vdom';
 import Button from '@dojo/widgets/button';
 
 import { generations, Generation, SkipMatrix } from './constants';
-import { Menu } from './widgets/Menu';
-import { Pokemon, PokemonData, PokemonEvolutionChain, PokemonEvolutionChainLink } from './widgets/Pokemon';
+import Menu from './widgets/Menu';
+import Pokemon, { PokemonData, PokemonEvolutionChain, PokemonEvolutionChainLink } from './widgets/Pokemon';
 
-import * as GenerationI from './data/Generation I.json';
-import * as GenerationII from './data/Generation II.json';
-import * as GenerationIII from './data/Generation III.json';
-import * as GenerationIV from './data/Generation IV.json';
-import * as GenerationV from './data/Generation V.json';
-import * as GenerationVI from './data/Generation VI.json';
-import * as GenerationVII from './data/Generation VII.json';
-import * as evolutions from './data/evolutions.json';
+import GenerationI from './data/Generation I.json';
+import GenerationII from './data/Generation II.json';
+import GenerationIII from './data/Generation III.json';
+import GenerationIV from './data/Generation IV.json';
+import GenerationV from './data/Generation V.json';
+import GenerationVI from './data/Generation VI.json';
+import GenerationVII from './data/Generation VII.json';
+import evolutions from './data/evolutions.json';
 
 import * as css from './App.m.css';
 
@@ -75,13 +75,11 @@ function createCustomGeneration(...generations: Generation[]): Generation {
 
 	let endId = 0;
 	generations.forEach((generation) => {
-		console.log(endId, endId + 1 - generation.pokemon.startId);
 		skipMatrix.push({
 			index: endId + 1,
 			numberToSkip: generation.pokemon.startId - (endId + 1)
 		});
 		endId += generation.pokemon.endId - generation.pokemon.startId + 1;
-		console.log(endId, skipMatrix);
 	});
 
 	const generation: Generation = {
@@ -194,18 +192,15 @@ export class App extends WidgetBase {
 
 	private _computeTrueId(id: number): number {
 		const { generation } = this._state;
-		console.log('initial id', id, generation.skipMatrix);
 		if (generation.skipMatrix) {
 			for (let i = generation.skipMatrix.length - 1; i >= 0; i--) {
 				const skipMatrixEntry = generation.skipMatrix[i];
 				if (skipMatrixEntry.index <= id) {
-					console.log(`${skipMatrixEntry.index} <= ${id}`, `adding ${skipMatrixEntry.numberToSkip}`);
 					id += skipMatrixEntry.numberToSkip;
 				}
 			}
 		}
 
-		console.log('final id', id);
 		return id;
 	}
 
@@ -346,7 +341,6 @@ export class App extends WidgetBase {
 		const data = generationData.dataById[id];
 
 		let evolutionChain: PokemonEvolutionChain | undefined;
-		console.log(quiz.currentIndex, id, data);
 		const evolutionIdMatch = /\/([0-9]+)\/$/g.exec(data.speciesData.evolution_chain.url);
 		if (evolutionIdMatch) {
 			const evolutionId = +evolutionIdMatch[1];
@@ -355,7 +349,7 @@ export class App extends WidgetBase {
 
 		return (
 			<Pokemon
-				key={`pokemon-view`}
+				key={`pokemon-view-${id}`}
 				data={data}
 				evolutionChain={evolutionChain}
 				onAnswer={this._onAnswer}
@@ -428,15 +422,15 @@ export class App extends WidgetBase {
 							<div classes={css.score}>
 								<div key="total" classes={css.total}>
 									{`${quizTotal}`}
-									<i class="material-icons">bug_report</i>
+									<i class="icon material-icons">bug_report</i>
 								</div>
 								<div key="correct" classes={css.correct}>
 									{`${correct}`}
-									<i class="material-icons">done</i>
+									<i class="icon material-icons">done</i>
 								</div>
 								<div key="incorrect" classes={css.incorrect}>
 									{`${incorrect}`}
-									<i class="material-icons">close</i>
+									<i class="icon material-icons">close</i>
 								</div>
 							</div>
 						</div>

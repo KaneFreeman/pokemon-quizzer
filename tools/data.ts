@@ -4,7 +4,7 @@ import { generations } from '../src/constants';
 import fetch from 'node-fetch';
 import { writeFileSync, readJSONSync } from 'fs-extra';
 import { join } from 'path';
-import chalk from 'chalk';
+import { blue, green } from 'chalk';
 
 const ora = require('ora');
 let evolutionData: EvolutionData = {};
@@ -61,9 +61,9 @@ async function fetchPokemonData(id: number) {
 }
 
 async function getData(startG: number) {
-	for (let g = startG; g < generations.length; g++) {
-		const generation = generations[g];
-		console.info(chalk.blue.bold(generation.name));
+	for (let g = startG; g <= generations.length; g++) {
+		const generation = generations[g - 1];
+		console.info(blue.bold(generation.name));
 		evolutionData = readJSONSync(join(__dirname, `../src/data/evolutions.json`));
 		const data: GenerationData = {
 			dataById: {},
@@ -73,7 +73,7 @@ async function getData(startG: number) {
 		const spinner = ora('Loading pokemon...').start();
 		spinner.color = 'green';
 		for (let i = generation.pokemon.startId; i <= generation.pokemon.endId; i++) {
-			spinner.text = chalk.green(` Loading pokemon... ${i - generation.pokemon.startId + 1} / ${total}`);
+			spinner.text = green(` Loading pokemon... ${i - generation.pokemon.startId + 1} / ${total}`);
 			const pokemonData = await fetchPokemonData(i);
 			data.dataById[i] = pokemonData;
 			data.idByName[pokemonData.name] = pokemonData.id;
@@ -85,4 +85,8 @@ async function getData(startG: number) {
 	writeFileSync(join(__dirname, `../src/data/evolutions.json`), JSON.stringify(evolutionData, null, 2));
 }
 
-getData(+process.argv[2]);
+let startGeneration = 1;
+if (!isNaN(+process.argv[2])) {
+	startGeneration = +process.argv[2];
+}
+getData(startGeneration);

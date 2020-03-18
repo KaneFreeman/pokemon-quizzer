@@ -71,13 +71,22 @@ export const generations: Generation[] = [
 	},
 	{
 		name: 'Generation VII',
-		region: '	Alola',
+		region: 'Alola',
 		games: ['Sun', 'Moon', 'Ultra Sun', 'Ultra Moon', "Let's Go, Pikachu!", "Let's Go, Eevee!"],
 		pokemon: {
 			startId: 722,
-			endId: 802
+			endId: 807
 		}
-	}
+	}/*,
+	{
+		name: 'Generation VIII',
+		region: 'Galar',
+		games: ['Sword', 'Shield'],
+		pokemon: {
+			startId: 810,
+			endId: 890
+		}
+	}*/
 ];
 
 export const generationLookup: { [key: string]: number } = {};
